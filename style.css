@@ -1,34 +1,33 @@
-/* Makes sizing easier to control */
+/* Makes sizing more predictable */
 * {
     box-sizing: border-box;
 }
 
-/* Smooth movement when clicking Learn more */
 html {
     scroll-behavior: smooth;
 }
 
 /* Main website colours */
 :root {
-    --navy: #16243a;
-    --dark-navy: #0f1a2b;
-    --cream: #f7f3ea;
-    --light-beige: #eee5d5;
+    --navy: #506a8d;
+    --navy-dark: #405a7b;
+    --beige: #fbf8f2;
+    --beige-soft: #f6f0e7;
+    --beige-card: #fdfbf7;
+    --gold: #c59a55;
+    --text: #465364;
     --white: #ffffff;
-    --gold: #c99a4a;
-    --text: #283343;
 }
 
 /* Whole website */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--cream);
+    background-color: var(--beige);
     color: var(--text);
     line-height: 1.7;
 }
 
-/* Stops headings having strange spacing */
 h1,
 h2,
 h3,
@@ -36,12 +35,10 @@ p {
     margin-top: 0;
 }
 
-/* Makes links use the correct font */
 a {
     font-family: inherit;
 }
 
-/* Reusable page width */
 .page-container {
     width: 90%;
     max-width: 1120px;
@@ -49,7 +46,7 @@ a {
 }
 
 
-/* ---------------- NAVIGATION ---------------- */
+/* ---------- NAVIGATION ---------- */
 
 .site-header {
     background-color: var(--navy);
@@ -58,7 +55,7 @@ a {
 .navbar {
     width: 90%;
     max-width: 1120px;
-    min-height: 82px;
+    min-height: 90px;
     margin: 0 auto;
 
     display: flex;
@@ -66,12 +63,34 @@ a {
     justify-content: space-between;
 }
 
-.logo {
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
     color: var(--white);
+    text-decoration: none;
+}
+
+.logo-space {
+    width: 58px;
+    height: 58px;
+    border: 2px dashed rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--white);
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.brand-name {
     font-size: 24px;
     font-weight: bold;
-    text-decoration: none;
-    letter-spacing: 0.5px;
 }
 
 .nav-links {
@@ -80,45 +99,38 @@ a {
 }
 
 .nav-links a {
+    padding-bottom: 4px;
     color: var(--white);
     text-decoration: none;
-    font-size: 16px;
-    padding-bottom: 4px;
     border-bottom: 2px solid transparent;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    border-bottom-color: var(--gold);
+    border-bottom-color: #ead2a6;
 }
 
 
-/* ---------------- HERO SECTION ---------------- */
+/* ---------- HERO ---------- */
 
 .hero {
-    min-height: 670px;
+    min-height: 650px;
     padding: 110px 5%;
 
     display: flex;
     align-items: center;
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(247, 243, 234, 1) 0%,
-            rgba(247, 243, 234, 0.96) 60%,
-            rgba(238, 229, 213, 1) 100%
-        );
+    background-color: var(--beige);
 }
 
 .hero-content {
     width: 100%;
-    max-width: 820px;
+    max-width: 850px;
     margin: 0 auto;
     text-align: center;
 }
 
-.eyebrow {
+.small-heading {
     margin-bottom: 16px;
     color: var(--gold);
     font-size: 14px;
@@ -129,133 +141,128 @@ a {
 
 .hero h1 {
     margin-bottom: 28px;
-    color: var(--navy);
-    font-size: clamp(43px, 6vw, 72px);
+    color: var(--navy-dark);
+    font-size: clamp(44px, 6vw, 72px);
     line-height: 1.08;
     letter-spacing: -2px;
 }
 
-.hero-description {
-    max-width: 720px;
-    margin: 0 auto 38px;
+.hero-text {
+    max-width: 730px;
+    margin: 0 auto 34px;
     font-size: 19px;
 }
 
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-
-.primary-button,
-.secondary-button,
+.main-button,
 .light-button {
     display: inline-block;
-    padding: 14px 26px;
-    border-radius: 6px;
+    padding: 15px 27px;
+    border-radius: 7px;
     font-weight: bold;
     text-decoration: none;
     transition: 0.2s ease;
 }
 
-.primary-button {
+.main-button {
     background-color: var(--navy);
     color: var(--white);
-    border: 2px solid var(--navy);
 }
 
-.primary-button:hover {
-    background-color: var(--dark-navy);
-    border-color: var(--dark-navy);
+.main-button:hover {
+    background-color: var(--navy-dark);
     transform: translateY(-2px);
 }
 
-.secondary-button {
-    color: var(--navy);
-    border: 2px solid var(--navy);
-}
-
-.secondary-button:hover {
-    background-color: var(--navy);
-    color: var(--white);
-    transform: translateY(-2px);
+.button-note {
+    max-width: 570px;
+    margin: 20px auto 0;
+    font-size: 15px;
+    color: #677386;
 }
 
 
-/* ---------------- ABOUT SECTION ---------------- */
+/* ---------- ABOUT ---------- */
 
 .about-section {
     padding: 100px 0;
-    background-color: var(--white);
+    background-color: var(--beige-soft);
 }
 
 .section-heading {
-    max-width: 720px;
+    max-width: 760px;
     margin-bottom: 45px;
 }
 
 .section-heading h2,
 .support-section h2,
-.contact-section h2 {
-    color: var(--navy);
+.contact-box h2 {
+    color: var(--navy-dark);
     font-size: clamp(34px, 4vw, 48px);
     line-height: 1.2;
 }
 
-.about-content {
+.about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 55px;
 }
 
-.about-content p {
+.about-grid p {
     font-size: 18px;
 }
 
 
-/* ---------------- FEATURE CARDS ---------------- */
+/* ---------- APPROACH CARDS ---------- */
 
-.features-section {
+.approach-section {
     padding: 100px 0;
-    background-color: var(--light-beige);
+    background-color: var(--beige);
 }
 
-.feature-grid {
+.centred-heading {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
 
-.feature-card {
+.information-card {
     padding: 38px;
-    background-color: var(--cream);
-    border-radius: 10px;
+    background-color: var(--beige-card);
+    border: 1px solid #ebe2d5;
     border-top: 4px solid var(--navy);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(64, 90, 123, 0.06);
 }
 
 .card-number {
+    margin-bottom: 14px;
     color: var(--gold);
     font-weight: bold;
     letter-spacing: 1px;
 }
 
-.feature-card h3 {
+.information-card h3 {
     margin-bottom: 15px;
-    color: var(--navy);
+    color: var(--navy-dark);
     font-size: 24px;
 }
 
-.feature-card p:last-child {
+.information-card p:last-child {
     margin-bottom: 0;
 }
 
 
-/* ---------------- SUPPORT SECTION ---------------- */
+/* ---------- SUPPORT ---------- */
 
 .support-section {
     padding: 100px 0;
-    background-color: var(--cream);
+    background-color: var(--beige-soft);
 }
 
 .support-grid {
@@ -265,15 +272,16 @@ a {
     align-items: center;
 }
 
-.support-grid > div:first-child > p:last-child {
+.support-introduction > p:last-child {
     font-size: 18px;
 }
 
 .support-list {
     padding: 35px;
-    background-color: var(--white);
+    background-color: var(--beige-card);
+    border: 1px solid #ebe2d5;
     border-radius: 10px;
-    box-shadow: 0 12px 30px rgba(22, 36, 58, 0.08);
+    box-shadow: 0 12px 30px rgba(64, 90, 123, 0.08);
 }
 
 .support-item {
@@ -281,7 +289,7 @@ a {
     align-items: center;
     gap: 15px;
     padding: 15px 0;
-    border-bottom: 1px solid var(--light-beige);
+    border-bottom: 1px solid #ebe2d5;
 }
 
 .support-item:last-child {
@@ -296,16 +304,16 @@ a {
 
 .support-item p {
     margin: 0;
-    color: var(--navy);
+    color: var(--navy-dark);
     font-weight: bold;
 }
 
 
-/* ---------------- CONTACT SECTION ---------------- */
+/* ---------- CONTACT SECTION ---------- */
 
 .contact-section {
-    padding: 70px 5%;
-    background-color: var(--cream);
+    padding: 80px 5%;
+    background-color: var(--beige);
 }
 
 .contact-box {
@@ -314,7 +322,11 @@ a {
     padding: 80px 8%;
     text-align: center;
     background-color: var(--navy);
-    border-radius: 12px;
+    border-radius: 14px;
+}
+
+.contact-heading {
+    color: #f1d9ad;
 }
 
 .contact-box h2 {
@@ -323,34 +335,31 @@ a {
     color: var(--white);
 }
 
-.contact-box > p:not(.eyebrow) {
+.contact-box > p:not(.small-heading) {
     max-width: 720px;
-    margin: 0 auto 32px;
-    color: #e8ebef;
+    margin: 0 auto 18px;
+    color: #f1f3f6;
     font-size: 18px;
 }
 
-.light-text {
-    color: #e4bd75;
-}
-
 .light-button {
-    background-color: var(--cream);
-    color: var(--navy);
+    margin-top: 18px;
+    background-color: var(--beige);
+    color: var(--navy-dark);
 }
 
 .light-button:hover {
-    background-color: var(--light-beige);
+    background-color: var(--beige-soft);
     transform: translateY(-2px);
 }
 
 
-/* ---------------- FOOTER ---------------- */
+/* ---------- FOOTER ---------- */
 
 .site-footer {
     padding: 45px 5%;
-    background-color: var(--dark-navy);
-    color: #d6dbe3;
+    background-color: var(--navy-dark);
+    color: #e8ebef;
     text-align: center;
 }
 
@@ -358,7 +367,7 @@ a {
     margin-bottom: 8px;
 }
 
-.footer-logo {
+.footer-name {
     color: var(--white);
     font-size: 21px;
     font-weight: bold;
@@ -366,17 +375,26 @@ a {
 
 .copyright {
     margin-top: 22px;
-    color: #9ca5b3;
+    color: #c7d0dc;
     font-size: 14px;
 }
 
 
-/* ---------------- PHONE AND TABLET DESIGN ---------------- */
+/* ---------- TABLETS ---------- */
 
 @media screen and (max-width: 800px) {
 
     .navbar {
-        min-height: 75px;
+        min-height: 80px;
+    }
+
+    .logo-space {
+        width: 50px;
+        height: 50px;
+    }
+
+    .brand-name {
+        font-size: 21px;
     }
 
     .nav-links {
@@ -388,22 +406,14 @@ a {
         padding: 90px 5%;
     }
 
-    .hero h1 {
-        letter-spacing: -1px;
-    }
-
-    .about-content,
-    .feature-grid,
+    .about-grid,
+    .card-grid,
     .support-grid {
         grid-template-columns: 1fr;
     }
 
-    .about-content {
-        gap: 10px;
-    }
-
-    .feature-grid {
-        gap: 18px;
+    .about-grid {
+        gap: 12px;
     }
 
     .support-grid {
@@ -411,7 +421,7 @@ a {
     }
 
     .about-section,
-    .features-section,
+    .approach-section,
     .support-section {
         padding: 75px 0;
     }
@@ -422,10 +432,22 @@ a {
 }
 
 
-@media screen and (max-width: 500px) {
+/* ---------- PHONES ---------- */
 
-    .logo {
-        font-size: 20px;
+@media screen and (max-width: 520px) {
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .logo-space {
+        width: 44px;
+        height: 44px;
+        font-size: 9px;
+    }
+
+    .brand-name {
+        font-size: 18px;
     }
 
     .nav-links {
@@ -440,20 +462,19 @@ a {
         padding: 75px 5%;
     }
 
-    .hero-description {
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .hero-text {
         font-size: 17px;
     }
 
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    .primary-button,
-    .secondary-button {
+    .main-button {
         width: 100%;
     }
 
-    .feature-card {
+    .information-card {
         padding: 28px;
     }
 
@@ -462,7 +483,7 @@ a {
     }
 
     .contact-section {
-        padding: 40px 5%;
+        padding: 45px 5%;
     }
 
     .contact-box {
