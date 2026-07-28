@@ -1,1 +1,436 @@
+/* Makes sizing easier to control */
+* {
+    box-sizing: border-box;
+}
 
+/* Main website colours */
+:root {
+    --off-white: #fbf9f4;
+    --light-blue: #7189a6;
+    --blue-hover: #607995;
+    --pale-blue: #dbe3ec;
+    --text: #46515f;
+    --soft-text: #687381;
+}
+
+/* Whole website */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--off-white);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+a {
+    font-family: inherit;
+}
+
+.page-container {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.site-header {
+    background-color: var(--off-white);
+    border-bottom: 1px solid var(--pale-blue);
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1120px;
+    min-height: 90px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+.logo-placeholder {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px dashed var(--light-blue);
+    border-radius: 50%;
+
+    color: var(--light-blue);
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    padding-bottom: 4px;
+    color: var(--light-blue);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    border-bottom-color: var(--light-blue);
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 620px;
+    padding: 100px 5%;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--off-white);
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.small-heading {
+    margin-bottom: 15px;
+    color: var(--light-blue);
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin-bottom: 25px;
+    color: var(--light-blue);
+    font-size: clamp(44px, 6vw, 72px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: 0 auto 32px;
+    font-size: 19px;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 15px 28px;
+
+    background-color: var(--light-blue);
+    color: var(--off-white);
+
+    border-radius: 7px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.main-button:hover {
+    background-color: var(--blue-hover);
+    transform: translateY(-2px);
+}
+
+.button-note {
+    max-width: 570px;
+    margin: 20px auto 0;
+
+    color: var(--soft-text);
+    font-size: 15px;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about-section {
+    padding: 90px 0;
+    background-color: var(--off-white);
+    border-top: 1px solid var(--pale-blue);
+}
+
+.about-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-content h2,
+.section-heading h2,
+.support-heading h2,
+.contact-box h2 {
+    margin-bottom: 20px;
+    color: var(--light-blue);
+    font-size: clamp(34px, 4vw, 48px);
+    line-height: 1.2;
+}
+
+.about-content > p:last-child {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+
+/* ---------- THREE CARDS ---------- */
+
+.approach-section {
+    padding: 90px 0;
+    background-color: var(--off-white);
+}
+
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.information-card {
+    padding: 36px;
+
+    background-color: var(--off-white);
+
+    border: 1px solid var(--pale-blue);
+    border-top: 4px solid var(--light-blue);
+    border-radius: 10px;
+
+    box-shadow: 0 10px 28px rgba(113, 137, 166, 0.08);
+}
+
+.card-number {
+    margin-bottom: 14px;
+    color: var(--light-blue);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.information-card h3 {
+    margin-bottom: 14px;
+    color: var(--light-blue);
+    font-size: 24px;
+}
+
+.information-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------- WHO WE HELP ---------- */
+
+.support-section {
+    padding: 90px 0;
+    background-color: var(--off-white);
+    border-top: 1px solid var(--pale-blue);
+}
+
+.support-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 75px;
+    align-items: center;
+}
+
+.support-heading > p:last-child {
+    font-size: 18px;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 28px;
+}
+
+.support-item {
+    padding: 18px 0;
+
+    color: var(--light-blue);
+    font-weight: bold;
+
+    border-bottom: 1px solid var(--pale-blue);
+}
+
+
+/* ---------- CONTACT ---------- */
+
+.contact-section {
+    padding: 90px 5%;
+    background-color: var(--off-white);
+}
+
+.contact-box {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 70px 8%;
+
+    text-align: center;
+
+    background-color: var(--off-white);
+
+    border: 2px solid var(--pale-blue);
+    border-radius: 14px;
+}
+
+.contact-box > p:not(.small-heading) {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    font-size: 18px;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+    padding: 45px 5%;
+
+    background-color: var(--off-white);
+    color: var(--soft-text);
+
+    text-align: center;
+
+    border-top: 1px solid var(--pale-blue);
+}
+
+.footer-content p {
+    margin-bottom: 7px;
+}
+
+.footer-name {
+    color: var(--light-blue);
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+/* ---------- TABLETS ---------- */
+
+@media screen and (max-width: 800px) {
+
+    .hero {
+        min-height: auto;
+        padding: 85px 5%;
+    }
+
+    .card-grid,
+    .support-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid {
+        gap: 20px;
+    }
+
+    .support-container {
+        gap: 40px;
+    }
+
+    .about-section,
+    .approach-section,
+    .support-section,
+    .contact-section {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+
+/* ---------- PHONES ---------- */
+
+@media screen and (max-width: 520px) {
+
+    .navbar {
+        min-height: 78px;
+    }
+
+    .logo-placeholder {
+        width: 44px;
+        height: 44px;
+        font-size: 8px;
+    }
+
+    .brand-name {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        gap: 13px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 70px 5%;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .main-button {
+        width: 100%;
+    }
+
+    .information-card {
+        padding: 28px;
+    }
+
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        padding: 50px 7%;
+    }
+}
