@@ -860,9 +860,9 @@
     .score-comparison__final small {
       display: block;
       margin-top: 7px;
-      color: rgba(255, 255, 255, 0.72);
+      color: #1F7A75;
       font-size: 0.76rem;
-      font-weight: 700;
+      font-weight: 800;
       line-height: 1.35;
     }
 
