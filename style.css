@@ -1700,3 +1700,377 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Proof asset refinement: authentic learner work without weak screenshots. */
+.project-blueprint,
+.drink-evidence {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.48fr) minmax(0, 1.52fr);
+  gap: 26px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+}
+
+.project-blueprint__intro h4,
+.drink-evidence__intro h4 {
+  margin: 7px 0 9px;
+  color: var(--blue);
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.project-blueprint__intro p,
+.drink-evidence__intro p {
+  margin: 0;
+}
+
+.blueprint-note {
+  margin-top: 14px !important;
+  color: rgba(16, 36, 45, 0.56);
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.blueprint-board {
+  overflow: hidden;
+  border: 1px solid rgba(11, 63, 81, 0.18);
+  border-radius: 20px;
+  background: #0b3f51;
+  box-shadow: 0 18px 44px rgba(11, 63, 81, 0.14);
+}
+
+.blueprint-route {
+  position: relative;
+  padding: 20px 22px 10px;
+  background:
+    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.blueprint-label {
+  display: block;
+  color: rgba(255,255,255,0.62);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.blueprint-route svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: -8px;
+  overflow: visible;
+}
+
+.blueprint-track-shadow {
+  fill: none;
+  stroke: rgba(0,0,0,0.28);
+  stroke-width: 29;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.blueprint-track {
+  fill: none;
+  stroke: #f6f0e8;
+  stroke-width: 18;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.blueprint-shortcut {
+  fill: none;
+  stroke: #f4c09b;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 12 10;
+}
+
+.blueprint-node circle {
+  fill: #1f7a75;
+  stroke: #fffaf3;
+  stroke-width: 5;
+}
+
+.blueprint-node text {
+  fill: #fffaf3;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.blueprint-hazard rect {
+  fill: #e47a2e;
+}
+
+.blueprint-hazard text {
+  fill: #fffaf3;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.blueprint-specs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(255,255,255,0.14);
+}
+
+.blueprint-specs article {
+  padding: 18px;
+}
+
+.blueprint-specs article + article {
+  border-left: 1px solid rgba(255,255,255,0.14);
+}
+
+.blueprint-specs span,
+.drink-concept > span,
+.drink-concept__copy > span,
+.score-summary > span {
+  display: block;
+  color: rgba(16, 36, 45, 0.6);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+.blueprint-specs span {
+  color: #f4c09b;
+}
+
+.blueprint-specs strong {
+  display: block;
+  margin: 7px 0 6px;
+  color: #fffaf3;
+  font-size: 0.92rem;
+  line-height: 1.3;
+}
+
+.blueprint-specs p {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.drink-copy {
+  margin: 20px 0 7px;
+  padding: 16px 18px;
+  border: 1px solid rgba(228, 122, 46, 0.24);
+  border-left: 4px solid var(--orange);
+  border-radius: 0 14px 14px 0;
+  color: var(--blue);
+  background: rgba(244, 192, 155, 0.16);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.04rem;
+  line-height: 1.4;
+}
+
+.drink-evidence__intro small {
+  color: rgba(16, 36, 45, 0.56);
+  font-size: 0.73rem;
+  font-weight: 800;
+}
+
+.drink-showcase {
+  display: grid;
+  grid-template-columns: 1.14fr 0.86fr;
+  gap: 12px;
+}
+
+.drink-concept {
+  padding: 20px;
+  border: 1px solid rgba(11, 63, 81, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 250, 243, 0.82);
+}
+
+.drink-concept strong {
+  display: block;
+  margin: 7px 0 6px;
+  color: var(--blue);
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.drink-concept p {
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.drink-concept--hero {
+  grid-row: span 2;
+  display: grid;
+  grid-template-columns: 142px 1fr;
+  gap: 22px;
+  align-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 20% 18%, rgba(244, 192, 155, 0.6), transparent 34%),
+    linear-gradient(145deg, rgba(205, 223, 215, 0.76), rgba(255, 250, 243, 0.94));
+}
+
+.drink-can {
+  position: relative;
+  width: 112px;
+  height: 210px;
+  margin: 0 auto;
+  border: 5px solid rgba(255,255,255,0.74);
+  border-radius: 28px 28px 22px 22px;
+  background:
+    radial-gradient(circle at 28% 20%, rgba(255,255,255,0.8), transparent 12%),
+    linear-gradient(160deg, #ff7e78 0%, #d74343 48%, #8f1f2d 100%);
+  box-shadow:
+    inset -13px 0 18px rgba(75, 8, 18, 0.22),
+    0 18px 28px rgba(57, 18, 22, 0.2);
+  transform: rotate(-4deg);
+}
+
+.drink-can::before,
+.drink-can::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  right: 7px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.72);
+}
+
+.drink-can::before { top: 4px; }
+.drink-can::after { bottom: 4px; }
+
+.drink-can__top {
+  position: absolute;
+  top: 0;
+  left: 17px;
+  width: 68px;
+  height: 12px;
+  border: 3px solid rgba(100, 30, 30, 0.42);
+  border-radius: 50%;
+}
+
+.drink-can__mark {
+  position: absolute;
+  inset: 54px 8px auto;
+  color: #fffaf3;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 0.86;
+  letter-spacing: -0.055em;
+  text-align: center;
+  text-shadow: 0 2px 0 rgba(88, 15, 25, 0.3);
+}
+
+.drink-can__spark {
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 42px;
+  padding: 5px 0;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 999px;
+  color: #fffaf3;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-align: center;
+}
+
+.score-summary {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px 18px;
+  align-items: baseline;
+  padding: 17px 19px;
+  border: 1px solid rgba(31, 122, 117, 0.24);
+  border-radius: 15px;
+  background: rgba(31, 122, 117, 0.075);
+}
+
+.score-summary > span,
+.score-summary strong {
+  color: #1f7a75;
+}
+
+.score-summary p {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.86rem;
+}
+
+@media (max-width: 940px) {
+  .project-blueprint,
+  .drink-evidence {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .score-summary {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .blueprint-specs,
+  .drink-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .blueprint-specs article + article {
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,0.14);
+  }
+
+  .drink-concept--hero {
+    grid-row: auto;
+    grid-template-columns: 108px 1fr;
+  }
+
+  .drink-can {
+    width: 88px;
+    height: 166px;
+    border-width: 4px;
+    border-radius: 22px 22px 18px 18px;
+  }
+
+  .drink-can__mark {
+    top: 43px;
+    font-size: 1.04rem;
+  }
+
+  .drink-can__spark {
+    left: 14px;
+    right: 14px;
+    bottom: 32px;
+  }
+}
+
+@media (max-width: 460px) {
+  .blueprint-route {
+    padding: 18px 10px 6px;
+  }
+
+  .blueprint-node text {
+    font-size: 15px;
+  }
+
+  .blueprint-hazard text {
+    font-size: 11px;
+  }
+
+  .drink-concept--hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .score-summary {
+    grid-template-columns: 1fr;
+  }
+}
