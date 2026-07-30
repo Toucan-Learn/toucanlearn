@@ -5,13 +5,13 @@
    ============================================================ */
 
 :root {
-  --paper:        #faf7f0;   /* warm off-white background        */
+  --paper:        #fffa1f;   /* warm off-white background        */
   --paper-alt:    #f2ede2;   /* slightly deeper off-white        */
-  --navy:         #3d5a79;   /* light navy — block colour        */
+  --navy:         #163b57;   /* light navy — block colour        */
   --navy-deep:    #22384c;   /* deep navy — footer / CTA         */
   --ink:          #223244;   /* body text (dark navy)            */
   --ink-soft:     #55677a;   /* muted text                       */
-  --orange:       #e07b43;   /* accent                           */
+  --orange:       #f5dfc8;   /* accent                           */
   --orange-deep:  #c85f2c;   /* accent for buttons / contrast    */
   --line:         rgba(34, 56, 76, 0.12);
 
