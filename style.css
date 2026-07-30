@@ -349,7 +349,7 @@
     .trust-card span { font-size: 0.88rem; color: rgba(16, 36, 45, 0.72); }
     .trust-card .icon { width: 42px; height: 42px; }
 
-    section { padding: 74px 0; }
+    section { padding: 96px 0; }
 
     .section-head {
       display: flex;
@@ -724,7 +724,7 @@
     }
 
     .cta {
-      padding: 0 0 82px;
+      padding: 42px 0 96px;
     }
 
     .cta-box {
@@ -841,7 +841,8 @@
         grid-template-columns: 1fr;
       }
 
-      section { padding: 52px 0; }
+      section { padding: 68px 0; }
+      .cta { padding: 20px 0 68px; }
       .section-head { margin-bottom: 24px; }
       .card, .muted-panel, .big-card, .value, blockquote, .case-study, .cta-box { padding: 22px; }
       .case-study ul { padding-left: 18px; }
