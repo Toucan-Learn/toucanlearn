@@ -774,6 +774,169 @@
       color: white;
     }
 
+    .result-panel--comparison {
+      grid-template-columns: 1fr;
+    }
+
+    .score-comparison {
+      width: 100%;
+      border: 1px solid rgba(11, 63, 81, 0.16);
+      border-spacing: 0;
+      border-radius: 18px;
+      overflow: hidden;
+      background: rgba(255, 250, 243, 0.82);
+      box-shadow: 0 16px 34px rgba(11, 63, 81, 0.08);
+    }
+
+    .score-comparison caption {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .score-comparison th,
+    .score-comparison td {
+      padding: 15px 17px;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    .score-comparison thead th {
+      color: rgba(16, 36, 45, 0.66);
+      background: rgba(205, 223, 215, 0.42);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+
+    .score-comparison thead th:first-child {
+      width: 32%;
+    }
+
+    .score-comparison tbody th,
+    .score-comparison tbody td {
+      border-top: 1px solid rgba(11, 63, 81, 0.12);
+    }
+
+    .score-comparison tbody th {
+      color: var(--blue);
+      font-size: 0.9rem;
+      line-height: 1.25;
+    }
+
+    .score-value {
+      display: block;
+      color: var(--blue);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.65rem, 2.6vw, 2.35rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+
+    .score-value span {
+      margin-left: 2px;
+      font-size: 0.56em;
+      letter-spacing: -0.02em;
+      opacity: 0.68;
+    }
+
+    .score-comparison__final {
+      color: white !important;
+      background: var(--blue) !important;
+    }
+
+    .score-comparison__final .score-value {
+      color: white;
+    }
+
+    .score-comparison__final small {
+      display: block;
+      margin-top: 7px;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.76rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .support-delivered {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 14px;
+      padding: 15px 18px;
+      border: 1px solid rgba(11, 63, 81, 0.14);
+      border-radius: 16px;
+      background: rgba(255, 250, 243, 0.72);
+    }
+
+    .support-delivered span {
+      color: rgba(16, 36, 45, 0.66);
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .support-delivered strong {
+      color: var(--blue);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.55rem;
+      letter-spacing: -0.03em;
+    }
+
+    .support-delivered small {
+      color: rgba(16, 36, 45, 0.66);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    @media (max-width: 620px) {
+      .score-comparison th,
+      .score-comparison td {
+        padding: 12px 9px;
+      }
+
+      .score-comparison thead th {
+        font-size: 0.61rem;
+        letter-spacing: 0.035em;
+      }
+
+      .score-comparison thead th:first-child {
+        width: 30%;
+      }
+
+      .score-comparison tbody th {
+        font-size: 0.78rem;
+      }
+
+      .score-value {
+        font-size: 1.55rem;
+      }
+
+      .score-comparison__final small {
+        font-size: 0.66rem;
+      }
+
+      .support-delivered {
+        grid-template-columns: 1fr auto;
+        gap: 4px 12px;
+      }
+
+      .support-delivered small {
+        grid-column: 1 / -1;
+        text-align: left;
+      }
+    }
+
     .case-support {
       grid-column: 1 / -1;
       display: grid;
