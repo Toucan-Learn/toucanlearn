@@ -6,7 +6,7 @@
   <title>Toucan Learn | Bespoke tutoring built around your child</title>
   <meta name="description" content="Specialist online tutoring for SEN learners and children who need extra support across KS2, KS3 and GCSE. Child-led, bespoke and confidence-building." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css?v=20260730-11" />
+  <link rel="stylesheet" href="style.css?v=20260730-12" />
 </head>
 <body>
   <!-- Replace every instance of this placeholder with your real Google Form intake link. -->
@@ -269,21 +269,70 @@
                 </div>
               </div>
 
-              <div class="project-evidence">
-                <div class="project-evidence__intro">
-                  <span class="project-kicker">Learner work</span>
-                  <h4>From “uncreative” to a designed world</h4>
-                  <p>The course, lobby and obstacles were not decorative rewards. They created a practical reason to plan, test, explain decisions and revise an idea for somebody else to understand.</p>
+              <div class="project-blueprint">
+                <div class="project-blueprint__intro">
+                  <span class="project-kicker">Learner-built system</span>
+                  <h4>Pig F1 became a world he could explain</h4>
+                  <p>Instead of showing rough planning screenshots as finished work, this blueprint presents the actual architecture he developed: a themed world, a complete race loop and mechanics that had to be designed, tested and communicated.</p>
+                  <p class="blueprint-note">Simplified from the learner’s own planning and Studio build.</p>
                 </div>
-                <div class="project-gallery">
-                  <figure>
-                    <img src="assets/proof-pig-f1-lobby.webp" alt="An anonymised learner's hand-drawn lobby plan for a pig racing game" loading="lazy" />
-                    <figcaption>Early lobby concept: a pig shop, player route and “choose your pig” station.</figcaption>
-                  </figure>
-                  <figure>
-                    <img src="assets/proof-pig-f1-plan.webp" alt="An anonymised learner's six-zone race-course plan with a development checklist" loading="lazy" />
-                    <figcaption>Six-zone course plan: completed sections, current build and the next technical jobs.</figcaption>
-                  </figure>
+
+                <div class="blueprint-board" aria-label="Simplified blueprint of the learner's Pig F1 game project">
+                  <div class="blueprint-route">
+                    <span class="blueprint-label">Project route</span>
+                    <svg viewBox="0 0 720 320" role="img" aria-labelledby="pig-f1-blueprint-title">
+                      <title id="pig-f1-blueprint-title">A simplified Pig F1 course moving through ranch, race and cave zones, with a shortcut and obstacles</title>
+                      <path class="blueprint-track-shadow" d="M76 218 C128 70 274 54 352 126 C412 182 452 240 552 224 C638 210 664 120 600 80 C530 36 438 72 394 150 C342 242 248 284 156 254 C108 238 82 230 76 218Z" />
+                      <path class="blueprint-track" d="M76 218 C128 70 274 54 352 126 C412 182 452 240 552 224 C638 210 664 120 600 80 C530 36 438 72 394 150 C342 242 248 284 156 254 C108 238 82 230 76 218Z" />
+                      <path class="blueprint-shortcut" d="M352 126 C404 114 452 116 498 142" />
+                      <g class="blueprint-node">
+                        <circle cx="96" cy="196" r="13" />
+                        <text x="96" y="169" text-anchor="middle">Ranch start</text>
+                      </g>
+                      <g class="blueprint-node">
+                        <circle cx="300" cy="92" r="13" />
+                        <text x="300" y="64" text-anchor="middle">F1 circuit</text>
+                      </g>
+                      <g class="blueprint-node">
+                        <circle cx="568" cy="211" r="13" />
+                        <text x="568" y="251" text-anchor="middle">Cave zone</text>
+                      </g>
+                      <g class="blueprint-node">
+                        <circle cx="600" cy="80" r="13" />
+                        <text x="600" y="52" text-anchor="middle">Finish</text>
+                      </g>
+                      <g class="blueprint-hazard">
+                        <rect x="176" y="230" width="90" height="30" rx="15" />
+                        <text x="221" y="250" text-anchor="middle">Mud slow-down</text>
+                      </g>
+                      <g class="blueprint-hazard">
+                        <rect x="424" y="220" width="88" height="30" rx="15" />
+                        <text x="468" y="240" text-anchor="middle">Sweeper</text>
+                      </g>
+                      <g class="blueprint-hazard">
+                        <rect x="447" y="98" width="96" height="30" rx="15" />
+                        <text x="495" y="118" text-anchor="middle">Bouncy balls</text>
+                      </g>
+                    </svg>
+                  </div>
+
+                  <div class="blueprint-specs">
+                    <article>
+                      <span>World</span>
+                      <strong>Ranch → F1 circuit → cave</strong>
+                      <p>Distinct zones, decoration, tunnelling and a risk–reward shortcut.</p>
+                    </article>
+                    <article>
+                      <span>Race system</span>
+                      <strong>Three laps, five start areas</strong>
+                      <p>Practice lap, traffic-light countdown, checkpoints, finish order and reset rules.</p>
+                    </article>
+                    <article>
+                      <span>Mechanics</span>
+                      <strong>Obstacles with consequences</strong>
+                      <p>Mud slow-down, diversion, reflex turns, rotating sweeper and scripted bouncy balls.</p>
+                    </article>
+                  </div>
                 </div>
               </div>
 
@@ -334,19 +383,47 @@
                 </div>
               </div>
 
-              <div class="report-evidence">
-                <div class="report-evidence__intro">
-                  <span class="project-kicker">School-report movement</span>
-                  <h4>Five subjects moved upwards</h4>
-                  <p>These figures do not mean he has fully caught up, and not every subject improved. They do show that the question has shifted from “Will he attempt the work?” to “How do we close the remaining gaps?”</p>
+              <div class="drink-evidence">
+                <div class="drink-evidence__intro">
+                  <span class="project-kicker">Learner-designed product</span>
+                  <h4>A drink idea became English, Maths and decision-making</h4>
+                  <p>Starting with his own product meant there was a reason to choose precise vocabulary, compare sugar data, make trade-offs and persuade an audience. The work grew from a blank prompt into a named concept, recipe and advert.</p>
+                  <blockquote class="drink-copy">“It’s sweet, fast, cheap, and will help you destroy your enemies.”</blockquote>
+                  <small>Original learner advert copy</small>
                 </div>
-                <div class="score-shifts" aria-label="Selected subject scores from February to July">
-                  <div class="score-shift"><span>Maths</span><strong>3% <i>→</i> 12%</strong></div>
-                  <div class="score-shift"><span>Science</span><strong>16% <i>→</i> 18%</strong></div>
-                  <div class="score-shift"><span>History</span><strong>3% <i>→</i> 21%</strong></div>
-                  <div class="score-shift"><span>IT</span><strong>20% <i>→</i> 30%</strong></div>
-                  <div class="score-shift"><span>RS</span><strong>5% <i>→</i> 8%</strong></div>
+
+                <div class="drink-showcase" aria-label="Examples from the learner's drink-design project">
+                  <article class="drink-concept drink-concept--hero">
+                    <div class="drink-can" aria-hidden="true">
+                      <span class="drink-can__top"></span>
+                      <span class="drink-can__mark">GROUND<br />PINCH</span>
+                      <span class="drink-can__spark">FIZZY</span>
+                    </div>
+                    <div class="drink-concept__copy">
+                      <span>Product identity</span>
+                      <strong>Ground Pinch</strong>
+                      <p>A named drink concept designed for a real audience, rather than an abstract writing exercise.</p>
+                    </div>
+                  </article>
+
+                  <article class="drink-concept">
+                    <span>Recipe decisions</span>
+                    <strong>Light, bright red · extreme fizz</strong>
+                    <p>Lime, sugar, water, food colouring and sweet potato—each choice gave him something concrete to specify and explain.</p>
+                  </article>
+
+                  <article class="drink-concept">
+                    <span>Maths and comparison</span>
+                    <strong>355 ml, three sugar references</strong>
+                    <p>He compared Dr Pepper at 11%, Coca-Cola at 10% and tomato juice at 1% before shaping his own product.</p>
+                  </article>
                 </div>
+              </div>
+
+              <div class="score-summary" aria-label="School-report progress summary">
+                <span>Wider evidence</span>
+                <strong>Five of seven recorded subject scores rose between reports.</strong>
+                <p>The drink project shows what engagement looked like in practice; the school data shows that the wider picture was also moving.</p>
               </div>
 
               <div class="next-target">
