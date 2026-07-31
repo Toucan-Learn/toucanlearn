@@ -6,7 +6,7 @@
   <title>Toucan Learn | Bespoke tutoring built around your child</title>
   <meta name="description" content="Specialist online tutoring for SEN learners and children who need extra support across KS2, KS3 and GCSE. Child-led, bespoke and confidence-building." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css?v=20260731-7" />
+  <link rel="stylesheet" href="style.css?v=20260731-8" />
 </head>
 <body>
   <!-- Replace every instance of this placeholder with your real Google Form intake link. -->
@@ -73,61 +73,58 @@
           <p>The route looks different for every child. The principles underneath it stay consistent—and the educational purpose stays clear.</p>
         </div>
 
-        <div class="approach-deck" data-approach-deck>
-          <div class="approach-tabs" role="tablist" aria-label="Explore the Toucan approach">
-            <button id="approach-method-tab" class="approach-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="approach-method" data-approach-tab="0">How we teach</button>
-            <button id="approach-values-tab" class="approach-tab" type="button" role="tab" aria-selected="false" aria-controls="approach-values" data-approach-tab="1" tabindex="-1">What guides us</button>
+        <div class="approach-deck">
+          <p class="approach-kicker">How we teach</p>
+          <div class="approach-route">
+            <article class="approach-card">
+              <span>01</span>
+              <h3>Build trust</h3>
+              <details class="approach-card__details">
+                <summary>See how <span aria-hidden="true">+</span></summary>
+                <p>Understand the learner’s strengths, barriers, interests, confidence and relationship with learning before deciding how to teach.</p>
+              </details>
+            </article>
+            <article class="approach-card">
+              <span>02</span>
+              <h3>Find the route</h3>
+              <details class="approach-card__details">
+                <summary>See how <span aria-hidden="true">+</span></summary>
+                <p>Use what already matters to them to create access, then add purposeful structure instead of forcing a generic worksheet route.</p>
+              </details>
+            </article>
+            <article class="approach-card">
+              <span>03</span>
+              <h3>Build and transfer</h3>
+              <details class="approach-card__details">
+                <summary>See how <span aria-hidden="true">+</span></summary>
+                <p>Develop academic skill, confidence and independence, then carry those gains into schoolwork and unfamiliar tasks.</p>
+              </details>
+            </article>
           </div>
-
-          <div class="approach-panels">
-            <div id="approach-method" class="approach-panel is-active" role="tabpanel" aria-labelledby="approach-method-tab" data-approach-panel="0">
-              <div class="approach-route">
-                <article class="approach-card">
-                  <span>01</span>
-                  <h3>Build trust</h3>
-                  <p>Understand the learner’s strengths, barriers, interests, confidence and relationship with learning before deciding how to teach.</p>
-                </article>
-                <article class="approach-card">
-                  <span>02</span>
-                  <h3>Find the route</h3>
-                  <p>Use what already matters to them to create access, then add purposeful structure instead of forcing a generic worksheet route.</p>
-                </article>
-                <article class="approach-card">
-                  <span>03</span>
-                  <h3>Build and transfer</h3>
-                  <p>Develop academic skill, confidence and independence, then carry those gains into schoolwork and unfamiliar tasks.</p>
-                </article>
-              </div>
-              <p class="approach-manifesto">Adapt the route—not the expectation.</p>
-            </div>
-
-            <div id="approach-values" class="approach-panel" role="tabpanel" aria-labelledby="approach-values-tab" data-approach-panel="1" hidden>
-              <div class="approach-values">
-                <article><span>Relationship first</span><p>Progress starts with trust. We help learners feel understood before asking for more output.</p></article>
-                <article><span>Learner ownership</span><p>Interests are real routes into thinking and skill—not rewards held back until work is finished.</p></article>
-                <article><span>Flexible structure</span><p>Sessions have direction and ambition, but the tutor adapts the pace, format and route.</p></article>
-                <article><span>Whole-person progress</span><p>Grades matter, alongside confidence, communication, resilience and growing independence.</p></article>
-              </div>
-              <p class="approach-manifesto">Child-led does not mean child-limited.</p>
-            </div>
-          </div>
+          <p class="approach-manifesto">Adapt the route—not the expectation.</p>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container who-grid muted-panel" id="who">
-        <div>
+    <section class="who-section">
+      <div class="container who-grid who-shell" id="who">
+        <div class="who-intro">
           <div class="eyebrow">Who we help</div>
-          <h2>Support for children who need something more individual.</h2>
-          <p class="lead">Toucan Learn is designed for families who feel generic tutoring is not enough. We work especially well with children who need trust, flexibility, structure and a tutor who can adapt.</p>
+          <h2>For learners who need a different route in.</h2>
+          <p class="lead">Some need a way back into learning. Others need help turning strong ideas into organised work. Many need both.</p>
+          <div class="who-stages" aria-label="Age and study stages supported">
+            <span>KS1–2</span>
+            <span>KS3</span>
+            <span>GCSE</span>
+            <span>Post-16</span>
+          </div>
           <a class="text-button" href="https://forms.gle/REPLACE_WITH_YOUR_FORM_LINK" target="_blank" rel="noopener">Tell us about your child →</a>
         </div>
         <div class="who-list">
-          <div class="pill-card"><strong>SEN learners</strong><p>Including students who need communication, processing, regulation or executive-function support.</p></div>
-          <div class="pill-card"><strong>KS2 support</strong><p>Core learning, confidence, literacy, numeracy and re-engagement with learning.</p></div>
-          <div class="pill-card"><strong>KS3 support</strong><p>Bridging gaps, building independence and helping students cope with increasing school demands.</p></div>
-          <div class="pill-card"><strong>GCSE support</strong><p>Focused tutoring for English, Maths and other subjects through trusted subject tutors.</p></div>
+          <article class="who-card"><span>01</span><div><strong>SEN and neurodivergent learners</strong><p>Support shaped around communication, processing, regulation and executive-function needs.</p></div></article>
+          <article class="who-card"><span>02</span><div><strong>Learners who have disengaged</strong><p>When confidence, anxiety, avoidance or repeated frustration has made learning feel inaccessible.</p></div></article>
+          <article class="who-card"><span>03</span><div><strong>Learners rebuilding foundations</strong><p>Literacy, numeracy and core skills taught through a route that feels achievable and relevant.</p></div></article>
+          <article class="who-card"><span>04</span><div><strong>Learners needing academic direction</strong><p>Clear structure for subject knowledge, written work, revision and growing independence.</p></div></article>
         </div>
       </div>
     </section>
@@ -608,43 +605,6 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    document.querySelectorAll('[data-approach-deck]').forEach((deck) => {
-      const tabs = [...deck.querySelectorAll('[data-approach-tab]')];
-      const panels = [...deck.querySelectorAll('[data-approach-panel]')];
-
-      const showPanel = (index, moveFocus = false) => {
-        tabs.forEach((tab, tabIndex) => {
-          const isActive = tabIndex === index;
-          tab.classList.toggle('is-active', isActive);
-          tab.setAttribute('aria-selected', String(isActive));
-          tab.tabIndex = isActive ? 0 : -1;
-          if (isActive && moveFocus) tab.focus();
-        });
-
-        panels.forEach((panel, panelIndex) => {
-          const isActive = panelIndex === index;
-          panel.classList.toggle('is-active', isActive);
-          panel.hidden = !isActive;
-        });
-      };
-
-      tabs.forEach((tab, index) => {
-        tab.addEventListener('click', () => showPanel(index));
-        tab.addEventListener('keydown', (event) => {
-          if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
-          event.preventDefault();
-          let nextIndex = index;
-          if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
-          if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
-          if (event.key === 'Home') nextIndex = 0;
-          if (event.key === 'End') nextIndex = tabs.length - 1;
-          showPanel(nextIndex, true);
-        });
-      });
-
-      showPanel(0);
-    });
 
     document.querySelectorAll('[data-carousel]').forEach((carousel) => {
       const stage = carousel.querySelector('.carousel-stage');
