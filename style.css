@@ -4078,3 +4078,199 @@ h1 {
     transition: none;
   }
 }
+
+/* Proof layout refinement: keep the active case study—not the tallest hidden one—in flow. */
+.proof-section {
+  padding: 68px 0 76px;
+}
+
+.proof-section .section-head {
+  align-items: start;
+  margin-bottom: 16px;
+}
+
+.proof-section .section-head h2 {
+  font-size: clamp(2.05rem, 3.1vw, 2.8rem);
+  line-height: 0.98;
+}
+
+.proof-section .section-head p {
+  max-width: 440px;
+  font-size: 0.98rem;
+  line-height: 1.48;
+}
+
+.proof-section .carousel-toolbar {
+  position: absolute;
+  z-index: 2;
+  top: -62px;
+  right: 0;
+  margin: 0;
+}
+
+.proof-section .carousel-stage {
+  position: relative;
+  display: block;
+}
+
+.proof-section .case-slide {
+  position: absolute;
+  inset: 0;
+  grid-area: auto;
+  margin-top: 0;
+}
+
+.proof-section .case-slide.is-active {
+  position: relative;
+  inset: auto;
+}
+
+.proof-section .carousel-dots {
+  margin-top: 6px;
+}
+
+/* Origin case: preserve the complete story while presenting it as one compact visual sequence. */
+.case-study--origin {
+  gap: 14px;
+  padding: 22px;
+}
+
+.case-study--origin h3 {
+  max-width: 430px;
+  margin-top: 10px;
+  font-size: clamp(1.72rem, 2.3vw, 2.12rem);
+  line-height: 1.02;
+}
+
+.case-study--origin .case-intro,
+.case-study--origin .case-credit {
+  margin-top: 12px !important;
+}
+
+.case-study--origin .case-intro {
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.case-study--origin .case-credit {
+  font-size: 0.84rem;
+  line-height: 1.36;
+}
+
+.case-study--origin .origin-arc {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.case-study--origin .origin-step {
+  padding: 11px 12px 11px 14px;
+}
+
+.case-study--origin .origin-step strong {
+  margin: 4px 0;
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+.case-study--origin .origin-step p {
+  font-size: 0.73rem;
+  line-height: 1.32;
+}
+
+.case-study--origin .origin-stories {
+  gap: 10px;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.case-study--origin .origin-story {
+  padding: 16px 18px;
+}
+
+.case-study--origin .origin-story h4 {
+  margin: 5px 0 6px;
+  font-size: 1.05rem;
+}
+
+.case-study--origin .origin-story p {
+  font-size: 0.82rem;
+  line-height: 1.43;
+}
+
+.case-study--origin .principle-band {
+  gap: 6px;
+}
+
+.case-study--origin .principle-band span {
+  padding: 6px 9px;
+  font-size: 0.7rem;
+}
+
+.case-study--origin .origin-details > summary {
+  min-height: 58px;
+  padding: 11px 15px;
+}
+
+.case-study--origin .origin-details .case-details__content {
+  gap: 14px;
+  padding: 16px;
+}
+
+.case-study--origin .origin-proof {
+  padding: 14px 18px;
+  border-radius: 16px;
+}
+
+.case-study--origin .origin-proof p {
+  max-width: 1020px;
+  font-family: inherit;
+  font-size: clamp(0.98rem, 1.45vw, 1.12rem);
+  font-weight: 650;
+  line-height: 1.32;
+}
+
+.case-study--origin .origin-proof footer {
+  margin-top: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+@media (max-width: 940px) {
+  .proof-section {
+    padding-block: 64px;
+  }
+
+  .proof-section .section-head {
+    margin-bottom: 12px;
+  }
+
+  .proof-section .carousel-toolbar {
+    position: static;
+    margin: 0 0 8px;
+  }
+
+  .case-study--origin .origin-arc {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .proof-section {
+    padding: 52px 0 60px;
+  }
+
+  .proof-section .carousel-toolbar {
+    position: static;
+    margin: 0 0 8px;
+  }
+
+  .case-study--origin {
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .case-study--origin .origin-arc,
+  .case-study--origin .origin-stories {
+    grid-template-columns: 1fr;
+  }
+}
