@@ -1344,7 +1344,7 @@
 
 /* Proof evidence pass: 2026-07-30 */
 
-/* Owen: conventional comparison table, with success shown through type rather than blocks of colour. */
+/* Completed IB case study: conventional comparison table, with success shown through type rather than blocks of colour. */
 .score-comparison {
   border-collapse: separate;
   border-spacing: 0;
@@ -2072,5 +2072,298 @@
 
   .score-summary {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Authentic learner-work proof assets: 2026-07-31 */
+
+.project-file {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.38fr) minmax(0, 1.62fr);
+  gap: 26px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+}
+
+.project-file__intro h4 {
+  margin: 7px 0 9px;
+  color: var(--blue);
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.project-file__intro p {
+  margin: 0;
+}
+
+.evidence-note {
+  margin-top: 14px !important;
+  color: rgba(16, 36, 45, 0.56) !important;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.project-file__board {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(300px, 0.82fr);
+  gap: 14px;
+  align-items: stretch;
+}
+
+.project-file__blueprint {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(11, 63, 81, 0.16);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 18px 44px rgba(11, 63, 81, 0.11);
+}
+
+.project-file__blueprint img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(11, 63, 81, 0.12);
+}
+
+.project-file__blueprint figcaption {
+  display: grid;
+  gap: 4px;
+  padding: 15px 17px 17px;
+}
+
+.project-file__blueprint figcaption strong {
+  color: var(--blue);
+  font-size: 0.92rem;
+}
+
+.project-file__blueprint figcaption span {
+  color: rgba(16, 36, 45, 0.62);
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.project-file__development {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 12px;
+}
+
+.dev-sheet,
+.prototype-sheet {
+  padding: 19px 20px;
+  border: 1px solid rgba(11, 63, 81, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 250, 243, 0.9);
+}
+
+.dev-sheet {
+  border-top: 4px solid #1f7a75;
+}
+
+.prototype-sheet {
+  border-top: 4px solid var(--orange);
+}
+
+.dev-sheet__label {
+  display: block;
+  color: rgba(16, 36, 45, 0.55);
+  font-size: 0.67rem;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.dev-sheet h5 {
+  margin: 7px 0 13px;
+  color: var(--blue);
+  font-size: 1.05rem;
+}
+
+.dev-outline,
+.dev-outline ol {
+  margin: 0;
+  padding-left: 20px;
+  color: rgba(16, 36, 45, 0.74);
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
+.dev-outline > li + li {
+  margin-top: 9px;
+}
+
+.dev-outline strong {
+  color: var(--blue);
+}
+
+.code-values {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 7px;
+  margin: 12px 0;
+}
+
+.code-values code {
+  padding: 8px 10px;
+  border: 1px solid rgba(11, 63, 81, 0.1);
+  border-radius: 9px;
+  color: #6f3155;
+  background: rgba(11, 63, 81, 0.045);
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.prototype-sheet > p {
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.learner-reflection {
+  min-height: 0;
+  display: block;
+  margin: 13px 0 7px;
+  padding: 13px 14px;
+  border: 0;
+  border-left: 3px solid var(--orange);
+  border-radius: 0 10px 10px 0;
+  color: var(--blue);
+  background: rgba(244, 192, 155, 0.16);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.88rem;
+  line-height: 1.42;
+}
+
+.prototype-sheet small {
+  color: rgba(16, 36, 45, 0.54);
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.drink-copy {
+  min-height: 0;
+  display: block;
+}
+
+.drink-range {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid rgba(11, 63, 81, 0.14);
+  border-radius: 22px;
+  background:
+    linear-gradient(135deg, rgba(205, 223, 215, 0.5), rgba(244, 192, 155, 0.2)),
+    rgba(255, 250, 243, 0.74);
+}
+
+.drink-range__item {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(11, 63, 81, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 250, 243, 0.94);
+}
+
+.drink-art {
+  height: 205px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  overflow: hidden;
+  padding: 10px;
+  border-bottom: 1px solid rgba(11, 63, 81, 0.1);
+  background:
+    radial-gradient(circle at 50% 12%, rgba(255, 255, 255, 0.92), transparent 45%),
+    #edf1ee;
+}
+
+.drink-art img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.drink-art--sketch {
+  padding: 4px;
+  background: #f5f6f7;
+}
+
+.drink-art--sketch img {
+  width: 100%;
+}
+
+.drink-art--monster img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.drink-art--fizzy img {
+  width: calc(50% - 4px);
+  height: 100%;
+}
+
+.drink-art--skids img {
+  width: 100%;
+  height: 100%;
+}
+
+.drink-range__copy {
+  padding: 13px 15px 15px;
+}
+
+.drink-range__copy span {
+  display: block;
+  color: rgba(16, 36, 45, 0.58);
+  font-size: 0.66rem;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+.drink-range__copy strong {
+  display: block;
+  margin: 5px 0 4px;
+  color: var(--blue);
+  font-size: 1rem;
+}
+
+.drink-range__copy p {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 1060px) {
+  .project-file {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 940px) {
+  .project-file {
+    grid-column: auto;
+  }
+
+  .project-file__board {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .drink-range {
+    grid-template-columns: 1fr;
+  }
+
+  .drink-art {
+    height: 230px;
   }
 }

@@ -6,7 +6,7 @@
   <title>Toucan Learn | Bespoke tutoring built around your child</title>
   <meta name="description" content="Specialist online tutoring for SEN learners and children who need extra support across KS2, KS3 and GCSE. Child-led, bespoke and confidence-building." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css?v=20260730-12" />
+  <link rel="stylesheet" href="style.css?v=20260731-1" />
 </head>
 <body>
   <!-- Replace every instance of this placeholder with your real Google Form intake link. -->
@@ -269,68 +269,59 @@
                 </div>
               </div>
 
-              <div class="project-blueprint">
-                <div class="project-blueprint__intro">
-                  <span class="project-kicker">Learner-built system</span>
-                  <h4>Pig F1 became a world he could explain</h4>
-                  <p>Instead of showing rough planning screenshots as finished work, this blueprint presents the actual architecture he developed: a themed world, a complete race loop and mechanics that had to be designed, tested and communicated.</p>
-                  <p class="blueprint-note">Simplified from the learner’s own planning and Studio build.</p>
+              <div class="project-file">
+                <div class="project-file__intro">
+                  <span class="project-kicker">From first sketch to working system</span>
+                  <h4>Pig F1 became a development record</h4>
+                  <p>The original track plan mattered because it gave a complicated idea a visible starting point. From there, the learner broke the build into objectives, selected mechanics, tested code and explained what he had learned.</p>
+                  <p class="evidence-note">All examples below come from the learner’s actual planning and lesson work.</p>
                 </div>
 
-                <div class="blueprint-board" aria-label="Simplified blueprint of the learner's Pig F1 game project">
-                  <div class="blueprint-route">
-                    <span class="blueprint-label">Project route</span>
-                    <svg viewBox="0 0 720 320" role="img" aria-labelledby="pig-f1-blueprint-title">
-                      <title id="pig-f1-blueprint-title">A simplified Pig F1 course moving through ranch, race and cave zones, with a shortcut and obstacles</title>
-                      <path class="blueprint-track-shadow" d="M76 218 C128 70 274 54 352 126 C412 182 452 240 552 224 C638 210 664 120 600 80 C530 36 438 72 394 150 C342 242 248 284 156 254 C108 238 82 230 76 218Z" />
-                      <path class="blueprint-track" d="M76 218 C128 70 274 54 352 126 C412 182 452 240 552 224 C638 210 664 120 600 80 C530 36 438 72 394 150 C342 242 248 284 156 254 C108 238 82 230 76 218Z" />
-                      <path class="blueprint-shortcut" d="M352 126 C404 114 452 116 498 142" />
-                      <g class="blueprint-node">
-                        <circle cx="96" cy="196" r="13" />
-                        <text x="96" y="169" text-anchor="middle">Ranch start</text>
-                      </g>
-                      <g class="blueprint-node">
-                        <circle cx="300" cy="92" r="13" />
-                        <text x="300" y="64" text-anchor="middle">F1 circuit</text>
-                      </g>
-                      <g class="blueprint-node">
-                        <circle cx="568" cy="211" r="13" />
-                        <text x="568" y="251" text-anchor="middle">Cave zone</text>
-                      </g>
-                      <g class="blueprint-node">
-                        <circle cx="600" cy="80" r="13" />
-                        <text x="600" y="52" text-anchor="middle">Finish</text>
-                      </g>
-                      <g class="blueprint-hazard">
-                        <rect x="176" y="230" width="90" height="30" rx="15" />
-                        <text x="221" y="250" text-anchor="middle">Mud slow-down</text>
-                      </g>
-                      <g class="blueprint-hazard">
-                        <rect x="424" y="220" width="88" height="30" rx="15" />
-                        <text x="468" y="240" text-anchor="middle">Sweeper</text>
-                      </g>
-                      <g class="blueprint-hazard">
-                        <rect x="447" y="98" width="96" height="30" rx="15" />
-                        <text x="495" y="118" text-anchor="middle">Bouncy balls</text>
-                      </g>
-                    </svg>
-                  </div>
+                <div class="project-file__board">
+                  <figure class="project-file__blueprint">
+                    <img src="assets/learner-pig-f1-original.png" alt="The learner's original hand-drawn Pig F1 track plan, titled The Pot Belly Pig" loading="lazy" />
+                    <figcaption>
+                      <strong>The original blueprint</strong>
+                      <span>“The Pot Belly Pig” · three laps · Mud Splash · the diversion · Skid Pig</span>
+                    </figcaption>
+                  </figure>
 
-                  <div class="blueprint-specs">
-                    <article>
-                      <span>World</span>
-                      <strong>Ranch → F1 circuit → cave</strong>
-                      <p>Distinct zones, decoration, tunnelling and a risk–reward shortcut.</p>
+                  <div class="project-file__development">
+                    <article class="dev-sheet">
+                      <span class="dev-sheet__label">Developer’s goal</span>
+                      <h5>Begin bouncy ball</h5>
+                      <ol class="dev-outline">
+                        <li>
+                          <strong>Complete entrance</strong>
+                          <ol>
+                            <li>Main exit</li>
+                            <li>Group cave</li>
+                            <li>Connect shortcut to the rest of the track</li>
+                          </ol>
+                        </li>
+                        <li>
+                          <strong>“DA BIG BALL’S BOUNCE”</strong>
+                          <ol>
+                            <li>Find code for bounciness</li>
+                            <li>Insert it into the balls</li>
+                            <li>Slow the pig car down in water</li>
+                          </ol>
+                        </li>
+                      </ol>
                     </article>
-                    <article>
-                      <span>Race system</span>
-                      <strong>Three laps, five start areas</strong>
-                      <p>Practice lap, traffic-light countdown, checkpoints, finish order and reset rules.</p>
-                    </article>
-                    <article>
-                      <span>Mechanics</span>
-                      <strong>Obstacles with consequences</strong>
-                      <p>Mud slow-down, diversion, reflex turns, rotating sweeper and scripted bouncy balls.</p>
+
+                    <article class="prototype-sheet">
+                      <span class="dev-sheet__label">Prototype mechanics</span>
+                      <div class="code-values" aria-label="Bounce prototype values">
+                        <code>bouncePower = 90</code>
+                        <code>sidePower = 25</code>
+                        <code>cooldown = 0.7</code>
+                      </div>
+                      <p>Each value had a purpose: height, sideways force and preventing the trigger from firing repeatedly.</p>
+                      <blockquote class="learner-reflection">
+                        “The benefits are the expansion of creativity, modelling in the virtual world and the ability to code.”
+                      </blockquote>
+                      <small>Excerpt from the learner’s later written reflection</small>
                     </article>
                   </div>
                 </div>
@@ -385,37 +376,57 @@
 
               <div class="drink-evidence">
                 <div class="drink-evidence__intro">
-                  <span class="project-kicker">Learner-designed product</span>
-                  <h4>A drink idea became English, Maths and decision-making</h4>
-                  <p>Starting with his own product meant there was a reason to choose precise vocabulary, compare sugar data, make trade-offs and persuade an audience. The work grew from a blank prompt into a named concept, recipe and advert.</p>
+                  <span class="project-kicker">One brief · four directions</span>
+                  <h4>A small product range, not one isolated idea</h4>
+                  <p>Starting with his own products gave the learner a reason to name, compare, redesign and persuade. The four concepts show how far he moved beyond the initial blank prompt.</p>
                   <blockquote class="drink-copy">“It’s sweet, fast, cheap, and will help you destroy your enemies.”</blockquote>
                   <small>Original learner advert copy</small>
                 </div>
 
-                <div class="drink-showcase" aria-label="Examples from the learner's drink-design project">
-                  <article class="drink-concept drink-concept--hero">
-                    <div class="drink-can" aria-hidden="true">
-                      <span class="drink-can__top"></span>
-                      <span class="drink-can__mark">GROUND<br />PINCH</span>
-                      <span class="drink-can__spark">FIZZY</span>
+                <div class="drink-range" aria-label="Four concepts from the learner's drink-design project">
+                  <article class="drink-range__item">
+                    <div class="drink-art drink-art--sketch">
+                      <img src="assets/drink-ground-pinch.png" alt="" loading="lazy" />
                     </div>
-                    <div class="drink-concept__copy">
-                      <span>Product identity</span>
+                    <div class="drink-range__copy">
+                      <span>Concept sketch</span>
                       <strong>Ground Pinch</strong>
-                      <p>A named drink concept designed for a real audience, rather than an abstract writing exercise.</p>
+                      <p>A can, label and advert composition drawn from scratch.</p>
                     </div>
                   </article>
 
-                  <article class="drink-concept">
-                    <span>Recipe decisions</span>
-                    <strong>Light, bright red · extreme fizz</strong>
-                    <p>Lime, sugar, water, food colouring and sweet potato—each choice gave him something concrete to specify and explain.</p>
+                  <article class="drink-range__item">
+                    <div class="drink-art drink-art--monster">
+                      <img src="assets/drink-monster.jpg" alt="" loading="lazy" />
+                    </div>
+                    <div class="drink-range__copy">
+                      <span>Custom remix</span>
+                      <strong>Monster remix</strong>
+                      <p>A recognisable product deliberately changed into his own version.</p>
+                    </div>
                   </article>
 
-                  <article class="drink-concept">
-                    <span>Maths and comparison</span>
-                    <strong>355 ml, three sugar references</strong>
-                    <p>He compared Dr Pepper at 11%, Coca-Cola at 10% and tomato juice at 1% before shaping his own product.</p>
+                  <article class="drink-range__item">
+                    <div class="drink-art drink-art--fizzy">
+                      <img src="assets/drink-fizzy-yellow.jpg" alt="" loading="lazy" />
+                      <img src="assets/drink-fizzy-pink.jpg" alt="" loading="lazy" />
+                    </div>
+                    <div class="drink-range__copy">
+                      <span>Label iteration</span>
+                      <strong>Fizzy</strong>
+                      <p>Two visual variants built around the same “fizzy, extreme” recipe.</p>
+                    </div>
+                  </article>
+
+                  <article class="drink-range__item">
+                    <div class="drink-art drink-art--skids">
+                      <img src="assets/drink-skids.jpg" alt="" loading="lazy" />
+                    </div>
+                    <div class="drink-range__copy">
+                      <span>Alternative direction</span>
+                      <strong>Skids</strong>
+                      <p>A cleaner bottle identity showing a completely different choice.</p>
+                    </div>
                   </article>
                 </div>
               </div>
