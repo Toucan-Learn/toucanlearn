@@ -2367,3 +2367,288 @@
     height: 230px;
   }
 }
+
+/* Proof evidence refinement: literacy transfer, product range and school-report context. */
+.literacy-proof,
+.report-comparison {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.36fr) minmax(0, 1.64fr);
+  gap: 26px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+}
+
+.literacy-proof__intro h4,
+.report-comparison__intro h4 {
+  margin: 7px 0 9px;
+  color: var(--blue);
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.literacy-proof__intro p,
+.report-comparison__intro p {
+  margin: 0;
+}
+
+.literacy-sequence {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.literacy-stage {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid rgba(11, 63, 81, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 250, 243, 0.88);
+}
+
+.literacy-stage > span {
+  display: block;
+  color: #1f7a75;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+.literacy-stage h5 {
+  margin: 13px 0 6px;
+  color: var(--blue);
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.literacy-stage p {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.48;
+}
+
+.literacy-visual {
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid rgba(11, 63, 81, 0.12);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.literacy-visual img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+.literacy-visual figcaption {
+  padding: 8px 10px 10px;
+  color: rgba(16, 36, 45, 0.58);
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.dev-note {
+  margin-top: 13px;
+  padding: 14px 15px;
+  border-left: 4px solid #1f7a75;
+  border-radius: 0 12px 12px 0;
+  background: rgba(31, 122, 117, 0.075);
+}
+
+.dev-note strong {
+  color: var(--blue);
+  font-size: 0.82rem;
+}
+
+.dev-note ol {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: rgba(16, 36, 45, 0.72);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.literacy-stage--history {
+  background: rgba(244, 192, 155, 0.12);
+}
+
+.history-headings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 13px;
+}
+
+.history-headings span {
+  padding: 7px 9px;
+  border: 1px solid rgba(11, 63, 81, 0.12);
+  border-radius: 999px;
+  color: var(--blue);
+  background: rgba(255, 250, 243, 0.9);
+  font-size: 0.7rem;
+  font-weight: 850;
+}
+
+.literacy-stage--result {
+  border-color: rgba(31, 122, 117, 0.28);
+  background: rgba(31, 122, 117, 0.09);
+}
+
+.history-excerpt {
+  min-height: 0;
+  display: block;
+  margin: 13px 0 0;
+  padding: 13px 14px;
+  border: 0;
+  border-left: 3px solid var(--orange);
+  border-radius: 0 10px 10px 0;
+  color: var(--blue);
+  background: rgba(255, 250, 243, 0.72);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.transfer-result {
+  display: block;
+  margin-top: 12px;
+  color: #1f7a75;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.drink-range-shot {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(11, 63, 81, 0.14);
+  border-radius: 20px;
+  background: #f7f4ed;
+  box-shadow: 0 18px 44px rgba(11, 63, 81, 0.1);
+}
+
+.drink-range-shot img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.drink-range-shot figcaption {
+  display: grid;
+  gap: 3px;
+  padding: 13px 16px 15px;
+}
+
+.drink-range-shot figcaption strong {
+  color: var(--blue);
+  font-size: 0.9rem;
+}
+
+.drink-range-shot figcaption span {
+  color: rgba(16, 36, 45, 0.58);
+  font-size: 0.72rem;
+  font-weight: 750;
+}
+
+.report-table-shell {
+  min-width: 0;
+  overflow-x: auto;
+  border: 1px solid rgba(11, 63, 81, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 250, 243, 0.92);
+}
+
+.report-table {
+  width: 100%;
+  min-width: 690px;
+  border-collapse: collapse;
+  color: rgba(16, 36, 45, 0.76);
+  font-size: 0.78rem;
+}
+
+.report-table caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.report-table th,
+.report-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(11, 63, 81, 0.1);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.report-table thead th {
+  color: rgba(16, 36, 45, 0.62);
+  background: #f1ece4;
+  font-size: 0.68rem;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.report-table tbody tr:last-child th,
+.report-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.report-table tbody th {
+  color: var(--blue);
+  font-weight: 850;
+}
+
+.report-table td strong {
+  color: var(--blue);
+  font-size: 0.86rem;
+}
+
+.report-table td span {
+  color: rgba(16, 36, 45, 0.48);
+}
+
+.report-table .score-up {
+  color: #1f7a75;
+  font-weight: 900;
+}
+
+.report-table .score-down {
+  color: #a65a37;
+  font-weight: 900;
+}
+
+@media (max-width: 1060px) {
+  .literacy-proof,
+  .report-comparison {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 940px) {
+  .literacy-proof,
+  .report-comparison {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .literacy-sequence {
+    grid-template-columns: 1fr;
+  }
+
+  .literacy-stage {
+    padding: 16px;
+  }
+
+  .drink-range-shot img {
+    aspect-ratio: 4 / 3;
+    object-position: center;
+  }
+}
