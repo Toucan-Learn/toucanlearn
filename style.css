@@ -3587,21 +3587,65 @@
   background: rgba(255, 250, 243, 0.72);
 }
 
-.case-overview .parent-proof--summary {
-  width: 100%;
-  margin-top: 22px;
-  padding: 19px 21px;
-  border-radius: 16px;
+.parent-proof--footer {
+  grid-column: 1 / -1;
+  margin-top: 0;
+  padding: 22px 26px;
+  border-radius: 18px;
 }
 
-.case-overview .parent-proof--summary p {
-  font-size: clamp(1rem, 1.45vw, 1.2rem);
-  line-height: 1.38;
+.parent-proof--footer p {
+  max-width: 980px;
+  font-family: inherit;
+  font-size: clamp(1.08rem, 1.7vw, 1.35rem);
+  font-weight: 650;
+  line-height: 1.42;
+  letter-spacing: -0.012em;
 }
 
-.case-overview .parent-proof--summary footer {
+.parent-proof--footer footer {
   margin-top: 10px;
   font-size: 0.76rem;
+  font-weight: 700;
+}
+
+/* Keep the visual hierarchy calm: serif is reserved for the brand and hero. */
+.proof-section .score-value,
+.proof-section .support-delivered strong,
+.proof-section .project-reflection blockquote,
+.proof-section .history-lead,
+.approach-manifesto,
+.how-cta strong {
+  font-family: inherit;
+}
+
+.section-head h2,
+.how-overview h2 {
+  font-size: clamp(2.1rem, 3.6vw, 3.2rem);
+}
+
+.case-study h3 {
+  font-size: clamp(1.75rem, 2.7vw, 2.45rem);
+  letter-spacing: -0.035em;
+}
+
+.eyebrow,
+.carousel-status,
+.approach-tab,
+.approach-card > span,
+.approach-values article > span,
+.method-ribbon span,
+.how-number,
+.how-overview .how-note {
+  font-weight: 750;
+}
+
+.proof-section .case-label,
+.proof-section .project-kicker,
+.proof-section .progress-card > span,
+.proof-section .evidence-item > span,
+.proof-section .product-card__copy > span {
+  font-weight: 750;
 }
 
 .case-details > summary {
@@ -3679,6 +3723,7 @@
 @media (max-width: 940px) {
   .hero-placeholder { height: 430px; }
   .case-details { grid-column: auto; }
+  .parent-proof--footer { grid-column: auto; }
 }
 
 @media (max-width: 620px) {
@@ -3694,6 +3739,7 @@
 
   .case-details__summary-copy small { font-size: 0.7rem; }
   .case-details__content { padding: 16px; }
+  .parent-proof--footer { padding: 19px 20px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
