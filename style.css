@@ -5146,7 +5146,7 @@ h1 {
   /* Keep the last part of the trust strip visible below the fixed header while
      preserving a smaller glimpse of Who we help at the bottom of the viewport. */
   #approach {
-    scroll-margin-top: clamp(16px, calc(50svh - 384px), 68px);
+    scroll-margin-top: clamp(16px, calc(57svh - 422px), 220px);
   }
 
 }
