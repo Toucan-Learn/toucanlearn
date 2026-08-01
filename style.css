@@ -4317,14 +4317,14 @@ h1 {
 }
 
 /* Restore the simpler pre-values Approach composition. */
-.approach-section {
-  min-height: calc(100svh - 88px);
+#approach {
+  min-height: 100svh;
   display: grid;
-  align-items: start;
-  padding: 72px 0;
+  align-content: center;
+  padding: 88px 0 100px;
 }
 
-.approach-section .section-head {
+#approach .section-head {
   margin-bottom: 28px;
 }
 
@@ -4767,7 +4767,7 @@ h1 {
 
 @media (max-width: 940px) {
   .hero,
-  .approach-section,
+  #approach,
   .who-section,
   .how-section {
     min-height: 0;
@@ -4786,7 +4786,7 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .approach-section,
+  #approach,
   .who-section,
   .how-section {
     padding: 70px 0;
@@ -4818,7 +4818,7 @@ h1 {
     height: 310px;
   }
 
-  .approach-section,
+  #approach,
   .who-section,
   .how-section {
     padding: 56px 0;
