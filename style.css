@@ -5118,6 +5118,12 @@ h1 {
 /* Preserve the original, continuous scroll feel: a slim band of the hero
    remains above Approach while Who we help still peeks in below. */
 @media (min-width: 941px) {
+  /* Keep Approach part of the continuous page: its two edges are slightly
+     tighter, while nav landing retains a generous band of the Hero above. */
+  #approach {
+    padding-block: 86px;
+  }
+
   /* Let the opening composition use more of the available desktop frame
      without changing its section boundary or allowing Approach to bleed in. */
   .hero-grid {
@@ -5145,7 +5151,7 @@ h1 {
   }
 
   #approach {
-    scroll-margin-top: 66px;
+    scroll-margin-top: 128px;
   }
 }
 
