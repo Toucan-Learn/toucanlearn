@@ -1,230 +1,160 @@
-<!doctype html>
-<html lang="en-GB">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<section
+  class="contact-section"
+  aria-label="Toucan Learn enquiry form"
+>
+  <div class="container contact-width">
 
-  <title>Enquire | Toucan Learn</title>
+    <form
+      class="enquiry-form"
+      id="enquiry-form"
+      action="https://formsubmit.co/joshuagordonjones@gmail.com"
+      method="POST"
+    >
 
-  <meta
-    name="description"
-    content="Enquire about personalised tutoring with Toucan Learn."
-  />
+      <input
+        type="hidden"
+        name="_subject"
+        value="New Toucan Learn tutoring enquiry"
+      />
 
-  <link rel="icon" href="https://toucan-learn.github.io/toucanlearn/assets/favicon.svg" type="image/svg+xml" />
+      <input
+        type="hidden"
+        name="_template"
+        value="table"
+      />
 
-  <!--
-    This loads the exact stylesheet used by the live Toucan Learn homepage.
-    Using the full web address also makes the downloaded page preview correctly.
-  -->
-  <link
-    rel="stylesheet"
-    href="https://toucan-learn.github.io/toucanlearn/style.css?v=20260801"
-  />
+      <input
+        type="hidden"
+        name="_captcha"
+        value="false"
+      />
 
-  <!-- Small amount of contact-form-specific styling. -->
-  <link rel="stylesheet" href="contact.css?v=20260801-4" />
-</head>
+      <input
+        type="hidden"
+        name="_next"
+        value="https://toucan-learn.github.io/toucanlearn/thank-you.html"
+      />
 
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+      <div class="honeypot" aria-hidden="true">
 
-  <header>
-    <div class="container nav" aria-label="Main navigation">
-      <a
-        class="logo"
-        href="https://toucan-learn.github.io/toucanlearn/#top"
-        aria-label="Toucan Learn home"
-      >
-        <img
-          src="https://toucan-learn.github.io/toucanlearn/assets/toucan-logo.svg"
-          alt=""
+        <label for="company-website">
+          Leave this field empty
+        </label>
+
+        <input
+          id="company-website"
+          name="_honey"
+          type="text"
+          tabindex="-1"
+          autocomplete="off"
         />
 
-        <span class="brand-lockup">
-          <strong>Toucan</strong>
-          <span>Learn</span>
-        </span>
-      </a>
-
-      <nav class="nav-links" aria-label="Primary">
-        <a href="https://toucan-learn.github.io/toucanlearn/#approach">Approach</a>
-        <a href="https://toucan-learn.github.io/toucanlearn/#who">Who we help</a>
-        <a href="https://toucan-learn.github.io/toucanlearn/#how-it-works">How it works</a>
-        <a href="https://toucan-learn.github.io/toucanlearn/#reviews">Proof</a>
-        <a class="button" href="#enquiry-form">Book your free trial</a>
-      </nav>
-
-      <div class="mobile-note">
-        <span>Specialist online tutoring</span>
-        <a class="text-button" href="#enquiry-form">Enquire now</a>
       </div>
-    </div>
-  </header>
 
-  <main id="main">
-    <section class="contact-hero">
-      <div class="container contact-width">
-        <div class="eyebrow">Enquire about tutoring</div>
+      <div class="fields-two">
 
-        <h1>Tell us about your child<span>.</span></h1>
+        <div class="field">
 
-        <p class="lead">
-          Tell us their age and what support you are looking for.
-        </p>
-      </div>
-    </section>
-
-    <section class="contact-section" aria-label="Toucan Learn enquiry form">
-      <div class="container contact-width">
-        <!--
-          IMPORTANT:
-          Replace joshuagordonjones@gmail.com in the action below with the email address
-          that should receive Toucan Learn enquiries.
-
-          Example:
-          action="https://formsubmit.co/hello@example.com"
-        -->
-        <form
-          class="enquiry-form"
-          id="enquiry-form"
-          action="https://formsubmit.co/joshuagordonjones@gmail.com"
-          method="POST"
-        >
-          <input
-            type="hidden"
-            name="_subject"
-            value="New Toucan Learn tutoring enquiry"
-          />
-
-          <input
-            type="hidden"
-            name="_template"
-            value="table"
-          />
-
-          <input
-            type="hidden"
-            name="_captcha"
-            value="false"
-          />
-
-          <input
-            type="hidden"
-            name="_next"
-            value="https://toucan-learn.github.io/toucanlearn/thank-you.html"
-          />
-
-          <div class="honeypot" aria-hidden="true">
-            <label for="company-website">Leave this field empty</label>
-
-            <input
-              id="company-website"
-              name="_honey"
-              type="text"
-              tabindex="-1"
-              autocomplete="off"
-            />
-          </div>
-
-          <div class="fields-two">
-            <div class="field">
-              <label for="parent-name">Parent or carer name</label>
-
-              <input
-                id="parent-name"
-                name="Parent or carer name"
-                type="text"
-                autocomplete="name"
-                required
-              />
-            </div>
-
-            <div class="field">
-              <label for="email">Email address</label>
-
-              <input
-                id="email"
-                name="email"
-                type="email"
-                autocomplete="email"
-                required
-              />
-            </div>
-
-            <div class="field">
-              <label for="child-name">Child’s first name</label>
-
-              <input
-                id="child-name"
-                name="Child's first name"
-                type="text"
-                required
-              />
-            </div>
-
-            <div class="field">
-              <label for="child-age">Child’s age</label>
-
-              <input
-                id="child-age"
-                name="Child's age"
-                type="text"
-                inputmode="numeric"
-                placeholder="For example: 10"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="field">
-            <label for="support-needed">What support are you looking for?</label>
-
-            <textarea
-              id="support-needed"
-              name="Support requested"
-              required
-              placeholder="Tell us what your child needs help with."
-            ></textarea>
-          </div>
-
-          <label class="consent">
-            <input
-              name="Consent given"
-              type="checkbox"
-              value="Yes"
-              required
-            />
-
-            <span>
-              I agree that Toucan Learn may use these details to reply to my enquiry.
-            </span>
+          <label for="parent-name">
+            Parent or carer name
           </label>
 
-          <button class="button form-submit" type="submit">
-            Send enquiry <span aria-hidden="true">→</span>
-          </button>
-        </form>
-      </div>
-    </section>
-  </main>
+          <input
+            id="parent-name"
+            name="Parent or carer name"
+            type="text"
+            autocomplete="name"
+            required
+          />
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        © <span id="year">2026</span> Toucan Learn. Specialist online tutoring.
+        </div>
+
+        <div class="field">
+
+          <label for="email">
+            Email address
+          </label>
+
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          />
+
+        </div>
+
+        <div class="field">
+
+          <label for="child-name">
+            Child’s first name
+          </label>
+
+          <input
+            id="child-name"
+            name="Child's first name"
+            type="text"
+            required
+          />
+
+        </div>
+
+        <div class="field">
+
+          <label for="child-age">
+            Child’s age
+          </label>
+
+          <input
+            id="child-age"
+            name="Child's age"
+            type="text"
+            inputmode="numeric"
+            placeholder="For example: 10"
+            required
+          />
+
+        </div>
+
       </div>
 
-      <div>
-        <a href="https://toucan-learn.github.io/toucanlearn/#top">
-          Return to the homepage
-        </a>
-      </div>
-    </div>
-  </footer>
+      <div class="field">
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+        <label for="support-needed">
+          What support are you looking for?
+        </label>
+
+        <textarea
+          id="support-needed"
+          name="Support requested"
+          required
+          placeholder="Tell us what your child needs help with."
+        ></textarea>
+
+      </div>
+
+      <label class="consent">
+
+        <input
+          name="Consent given"
+          type="checkbox"
+          value="Yes"
+          required
+        />
+
+        <span>
+          I agree that Toucan Learn may use these details
+          to reply to my enquiry.
+        </span>
+
+      </label>
+
+      <button class="button form-submit" type="submit">
+        Send enquiry <span aria-hidden="true">→</span>
+      </button>
+
+    </form>
+
+  </div>
+</section>
