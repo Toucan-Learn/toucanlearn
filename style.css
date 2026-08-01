@@ -5143,6 +5143,12 @@ h1 {
     padding: 12px 14px;
   }
 
+  /* Keep the last part of the trust strip visible below the fixed header while
+     preserving a smaller glimpse of Who we help at the bottom of the viewport. */
+  #approach {
+    scroll-margin-top: clamp(16px, calc(50svh - 384px), 68px);
+  }
+
 }
 
 /* Exact pre-values Approach heading scale; the base section, cards and natural
