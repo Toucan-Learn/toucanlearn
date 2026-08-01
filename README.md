@@ -52,3 +52,4 @@ Use Netlify Drop: drag the folder into Netlify Drop and it gives you a live webs
 - Subtle mascot/logo
 - No stock photos
 - Mobile-first
+Fix thank-you page redirect
