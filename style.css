@@ -5115,15 +5115,8 @@ h1 {
   scroll-margin-top: -20px;
 }
 
-/* Preserve the original, continuous scroll feel: a slim band of the hero
-   remains above Approach while Who we help still peeks in below. */
+/* Desktop Hero scale. Approach itself uses its original pre-values geometry. */
 @media (min-width: 941px) {
-  /* Keep Approach part of the continuous page: its two edges are slightly
-     tighter, while nav landing retains a generous band of the Hero above. */
-  #approach {
-    padding-block: 86px;
-  }
-
   /* Let the opening composition use more of the available desktop frame
      without changing its section boundary or allowing Approach to bleed in. */
   .hero-grid {
@@ -5150,9 +5143,12 @@ h1 {
     padding: 12px 14px;
   }
 
-  #approach {
-    scroll-margin-top: 128px;
-  }
+}
+
+/* Exact pre-values Approach heading scale; the base section, cards and natural
+   anchor already retain the original 96px spacing and 0px scroll margin. */
+#approach .section-head h2 {
+  font-size: clamp(2.2rem, 4vw, 3.7rem);
 }
 
 @media (max-width: 620px) {
