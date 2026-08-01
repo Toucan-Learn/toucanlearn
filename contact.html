@@ -12,8 +12,167 @@
   />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css?v=20260801" />
-  <link rel="stylesheet" href="contact.css?v=20260801-5" />
+  <link rel="stylesheet" href="style.css?v=20260801-contact-final" />
+
+  <style>
+    /* Contact page additions using the same Toucan Learn design system. */
+
+    .contact-hero {
+      padding: 68px 0 24px;
+    }
+
+    .contact-wrap {
+      width: min(calc(100% - 32px), 840px);
+      margin-inline: auto;
+    }
+
+    .contact-hero h1 {
+      max-width: 760px;
+    }
+
+    .contact-hero .lead {
+      max-width: 650px;
+      margin-bottom: 0;
+    }
+
+    .contact-form-section {
+      padding: 30px 0 100px;
+    }
+
+    .enquiry-form {
+      display: grid;
+      gap: 24px;
+      padding: clamp(24px, 5vw, 44px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255, 250, 243, 0.84),
+          rgba(205, 223, 215, 0.40)
+        );
+      box-shadow: var(--shadow);
+    }
+
+    .fields-two {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .field {
+      display: grid;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .field label {
+      color: var(--blue);
+      font-size: 0.92rem;
+      font-weight: 800;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      border: 1px solid rgba(11, 63, 81, 0.22);
+      border-radius: 12px;
+      color: var(--ink);
+      background: rgba(255, 250, 243, 0.90);
+      font: inherit;
+      outline: none;
+      transition:
+        border-color 160ms ease,
+        box-shadow 160ms ease,
+        background 160ms ease;
+    }
+
+    .field input {
+      min-height: 52px;
+      padding: 0 14px;
+    }
+
+    .field textarea {
+      min-height: 175px;
+      padding: 14px;
+      resize: vertical;
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: rgba(16, 36, 45, 0.48);
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      border-color: var(--orange);
+      background: var(--paper);
+      box-shadow: 0 0 0 4px rgba(228, 122, 46, 0.14);
+    }
+
+    .consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 15px 16px;
+      border: 1px solid rgba(31, 122, 117, 0.18);
+      border-radius: var(--radius-md);
+      background: rgba(205, 223, 215, 0.54);
+      cursor: pointer;
+    }
+
+    .consent input {
+      flex: 0 0 auto;
+      width: 19px;
+      height: 19px;
+      margin-top: 2px;
+      accent-color: var(--blue);
+    }
+
+    .consent span {
+      color: rgba(16, 36, 45, 0.80);
+      font-size: 0.92rem;
+    }
+
+    .form-submit {
+      justify-self: start;
+      width: auto;
+      border: 0;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .honeypot {
+      position: absolute !important;
+      left: -9999px !important;
+      width: 1px !important;
+      height: 1px !important;
+      overflow: hidden !important;
+    }
+
+    @media (max-width: 620px) {
+      .contact-hero {
+        padding: 44px 0 18px;
+      }
+
+      .contact-form-section {
+        padding: 20px 0 70px;
+      }
+
+      .fields-two {
+        grid-template-columns: 1fr;
+      }
+
+      .enquiry-form {
+        padding: 22px;
+        border-radius: var(--radius-lg);
+      }
+
+      .form-submit {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -47,7 +206,7 @@
 
   <main id="main">
     <section class="contact-hero">
-      <div class="container contact-width">
+      <div class="contact-wrap">
         <div class="eyebrow">Enquire about tutoring</div>
 
         <h1>Tell us about your child<span>.</span></h1>
@@ -59,10 +218,10 @@
     </section>
 
     <section
-      class="contact-section"
+      class="contact-form-section"
       aria-label="Toucan Learn enquiry form"
     >
-      <div class="container contact-width">
+      <div class="contact-wrap">
         <form
           class="enquiry-form"
           id="enquiry-form"
