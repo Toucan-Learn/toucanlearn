@@ -15,13 +15,16 @@
   <link rel="stylesheet" href="style.css?v=20260801-contact-final" />
 
   <style>
-    /* Contact page additions using the same Toucan Learn design system. */
+    /*
+      These are only the extra rules needed for the enquiry form.
+      The colours, fonts, logo, header, buttons and footer come from style.css.
+    */
 
     .contact-hero {
-      padding: 68px 0 24px;
+      padding: 58px 0 20px;
     }
 
-    .contact-wrap {
+    .contact-width {
       width: min(calc(100% - 32px), 840px);
       margin-inline: auto;
     }
@@ -36,7 +39,7 @@
     }
 
     .contact-form-section {
-      padding: 30px 0 100px;
+      padding: 28px 0 100px;
     }
 
     .enquiry-form {
@@ -48,8 +51,8 @@
       background:
         linear-gradient(
           135deg,
-          rgba(255, 250, 243, 0.84),
-          rgba(205, 223, 215, 0.40)
+          rgba(255, 250, 243, 0.86),
+          rgba(205, 223, 215, 0.42)
         );
       box-shadow: var(--shadow);
     }
@@ -78,7 +81,7 @@
       border: 1px solid rgba(11, 63, 81, 0.22);
       border-radius: 12px;
       color: var(--ink);
-      background: rgba(255, 250, 243, 0.90);
+      background: rgba(255, 250, 243, 0.92);
       font: inherit;
       outline: none;
       transition:
@@ -130,7 +133,7 @@
     }
 
     .consent span {
-      color: rgba(16, 36, 45, 0.80);
+      color: rgba(16, 36, 45, 0.8);
       font-size: 0.92rem;
     }
 
@@ -152,11 +155,11 @@
 
     @media (max-width: 620px) {
       .contact-hero {
-        padding: 44px 0 18px;
+        padding: 40px 0 16px;
       }
 
       .contact-form-section {
-        padding: 20px 0 70px;
+        padding: 18px 0 70px;
       }
 
       .fields-two {
@@ -180,7 +183,7 @@
 
   <header>
     <div class="container nav" aria-label="Main navigation">
-      <a class="logo" href="index.html#top" aria-label="Toucan Learn home">
+      <a class="logo" href="index.html" aria-label="Toucan Learn home">
         <img src="assets/toucan-logo.svg" alt="" />
 
         <span class="brand-lockup">
@@ -199,14 +202,14 @@
 
       <div class="mobile-note">
         <span>Specialist online tutoring</span>
-        <a class="text-button" href="#enquiry-form">Enquire now</a>
+        <a class="text-button" href="#enquiry-form">Book a free trial</a>
       </div>
     </div>
   </header>
 
   <main id="main">
     <section class="contact-hero">
-      <div class="contact-wrap">
+      <div class="contact-width">
         <div class="eyebrow">Enquire about tutoring</div>
 
         <h1>Tell us about your child<span>.</span></h1>
@@ -221,7 +224,7 @@
       class="contact-form-section"
       aria-label="Toucan Learn enquiry form"
     >
-      <div class="contact-wrap">
+      <div class="contact-width">
         <form
           class="enquiry-form"
           id="enquiry-form"
@@ -248,18 +251,14 @@
 
           <input
             type="hidden"
-            <input
-  type="hidden"
-  name="_next"
-  value="https://toucan-learn.github.io/toucanlearn/thank-you.html"
-/>
-
-<input
-  type="hidden"
-  name="_url"
-  value="https://toucan-learn.github.io/toucanlearn/contact.html"
-/>
+            name="_next"
             value="https://toucan-learn.github.io/toucanlearn/thank-you.html"
+          />
+
+          <input
+            type="hidden"
+            name="_url"
+            value="https://toucan-learn.github.io/toucanlearn/contact.html"
           />
 
           <div class="honeypot" aria-hidden="true">
@@ -367,7 +366,7 @@
       </div>
 
       <div>
-        <a href="index.html#top">Return to the homepage</a>
+        <a href="index.html">Return to the homepage</a>
       </div>
     </div>
   </footer>
