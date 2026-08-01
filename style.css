@@ -5110,13 +5110,13 @@ h1 {
 }
 
 
-/* Give the Proof landing a little more room below the sticky header. */
+/* Centre the complete Proof composition when reached from navigation. */
 #reviews {
-  scroll-margin-top: 20px;
+  scroll-margin-top: -20px;
 }
 
 @media (max-width: 620px) {
   #reviews {
-    scroll-margin-top: 16px;
+    scroll-margin-top: 0;
   }
 }
