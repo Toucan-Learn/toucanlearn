@@ -11,14 +11,54 @@
     content="Your Toucan Learn enquiry has been sent."
   />
 
-  <link rel="icon" href="https://toucan-learn.github.io/toucanlearn/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css?v=20260801-thanks-final" />
 
-  <link
-    rel="stylesheet"
-    href="https://toucan-learn.github.io/toucanlearn/style.css?v=20260801"
-  />
+  <style>
+    .thanks-main {
+      min-height: calc(100vh - 190px);
+      display: grid;
+      align-items: center;
+      padding: 70px 0;
+    }
 
-  <link rel="stylesheet" href="contact.css?v=20260801-4" />
+    .thanks-card {
+      width: min(calc(100% - 32px), 780px);
+      margin-inline: auto;
+      padding: clamp(34px, 7vw, 72px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(244, 192, 155, 0.6),
+          rgba(205, 223, 215, 0.72)
+        ),
+        var(--paper);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .thanks-card h1,
+    .thanks-card .lead {
+      margin-inline: auto;
+    }
+
+    .thanks-card .lead {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 620px) {
+      .thanks-main {
+        padding: 45px 0;
+      }
+
+      .thanks-card {
+        padding: 38px 22px;
+        border-radius: var(--radius-lg);
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -26,57 +66,62 @@
 
   <header>
     <div class="container nav" aria-label="Main navigation">
-      <a
-        class="logo"
-        
-        aria-label="Toucan Learn home"
-      >
-        <img
-          src="https://toucan-learn.github.io/toucanlearn/assets/toucan-logo.svg"
-          alt=""
-        />
-href="/toucanlearn/"
+      <a class="logo" href="index.html" aria-label="Toucan Learn home">
+        <img src="assets/toucan-logo.svg" alt="" />
+
         <span class="brand-lockup">
           <strong>Toucan</strong>
           <span>Learn</span>
         </span>
       </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#approach">Approach</a>
+        <a href="index.html#who">Who we help</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#reviews">Proof</a>
+        <a class="button" href="contact.html">Book your free trial</a>
+      </nav>
+
+      <div class="mobile-note">
+        <span>Specialist online tutoring</span>
+        <a class="text-button" href="contact.html">Book a free trial</a>
+      </div>
     </div>
   </header>
 
   <main class="thanks-main" id="main">
-    <section>
-      <div class="container">
-        <div class="thanks-card">
-          <div class="eyebrow">Enquiry sent</div>
+    <section class="thanks-card">
+      <div class="eyebrow">Enquiry sent</div>
 
-          <h1>Thank you<span>.</span></h1>
+      <h1>Thank you<span>.</span></h1>
 
-          <p class="lead">
-            Your enquiry has been sent to Toucan Learn.
-          </p>
+      <p class="lead">
+        Your enquiry has been sent to Toucan Learn.
+      </p>
 
-          <a
-            class="button"
-            href="https://toucan-learn.github.io/toucanlearn/#top"
-          >
-            Return to the homepage
-          </a>
-        </div>
-      </div>
+      <a class="button" href="index.html">
+        Return to the homepage
+      </a>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        © <span id="year">2026</span> Toucan Learn. Specialist online tutoring.
+        © <span id="year">2026</span> Toucan Learn.
+        Specialist online tutoring.
+      </div>
+
+      <div>
+        <a href="contact.html">Send another enquiry</a>
       </div>
     </div>
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
   </script>
 </body>
 </html>
