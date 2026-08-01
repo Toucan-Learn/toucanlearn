@@ -5115,6 +5115,14 @@ h1 {
   scroll-margin-top: -20px;
 }
 
+/* Preserve the original, continuous scroll feel: a slim band of the hero
+   remains above Approach while Who we help still peeks in below. */
+@media (min-width: 941px) {
+  #approach {
+    scroll-margin-top: 22px;
+  }
+}
+
 @media (max-width: 620px) {
   #reviews {
     scroll-margin-top: 0;
