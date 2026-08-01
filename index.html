@@ -6,7 +6,7 @@
   <title>Toucan Learn | Bespoke tutoring built around your child</title>
   <meta name="description" content="Specialist online tutoring for SEN learners and children who need extra support across KS2, KS3 and GCSE. Child-led, bespoke and confidence-building." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css?v=20260801-hero-scale-approach-edges-2" />
+  <link rel="stylesheet" href="style.css?v=20260801-proof-mascot-draft" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -580,6 +580,13 @@
     </div>
   </footer>
 
+  <aside class="toucan-mascot" data-mascot hidden aria-label="Toucan Learn mascot">
+    <button class="toucan-mascot__hide" type="button" data-mascot-hide aria-label="Hide the Toucan mascot">×</button>
+    <button class="toucan-mascot__character" type="button" data-mascot-character aria-label="Make the Toucan hop">
+      <img src="assets/toucan-mascot-draft-web.png" alt="" width="302" height="320" />
+    </button>
+  </aside>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -642,6 +649,36 @@
 
       showSlide(0);
     });
+
+    const mascot = document.querySelector('[data-mascot]');
+    if (mascot) {
+      const character = mascot.querySelector('[data-mascot-character]');
+      const hide = mascot.querySelector('[data-mascot-hide]');
+      let hopTimer;
+
+      const revealMascot = () => {
+        const revealPoint = Math.min(320, window.innerHeight * 0.42);
+        mascot.classList.toggle('is-visible', window.scrollY > revealPoint);
+      };
+
+      mascot.hidden = false;
+      revealMascot();
+      window.addEventListener('scroll', revealMascot, { passive: true });
+
+      character.addEventListener('click', () => {
+        window.clearTimeout(hopTimer);
+        mascot.classList.remove('is-hopping');
+        window.requestAnimationFrame(() => {
+          mascot.classList.add('is-hopping');
+          hopTimer = window.setTimeout(() => mascot.classList.remove('is-hopping'), 720);
+        });
+      });
+
+      hide.addEventListener('click', () => {
+        mascot.classList.remove('is-visible');
+        window.removeEventListener('scroll', revealMascot);
+      });
+    }
   </script>
 </body>
 </html>
