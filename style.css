@@ -4865,3 +4865,211 @@ h1 {
     transition: none;
   }
 }
+
+/* Proof spacing rebalance: retain the clean carousel without compressing the case studies. */
+.proof-section {
+  padding: 64px 0 78px;
+}
+
+.proof-section .section-head {
+  margin-bottom: 18px;
+}
+
+.proof-section .proof-heading {
+  max-width: 920px;
+}
+
+.proof-section .section-head h2 {
+  max-width: 900px;
+}
+
+.proof-section .carousel-toolbar {
+  top: -62px;
+}
+
+.proof-section .case-study--ib {
+  gap: 20px 24px;
+  padding: 28px;
+}
+
+.proof-section .case-study h3 {
+  margin-top: 16px;
+  font-size: clamp(1.82rem, 2.55vw, 2.4rem);
+  line-height: 1.045;
+}
+
+.proof-section .case-intro {
+  margin-top: 14px !important;
+  font-size: 0.97rem;
+  line-height: 1.49;
+}
+
+.proof-section .case-credit {
+  margin-top: 14px !important;
+  padding-left: 16px;
+  font-size: 0.91rem;
+  line-height: 1.45;
+}
+
+.proof-section .score-comparison th,
+.proof-section .score-comparison td {
+  padding: 13px 15px;
+}
+
+.proof-section .support-delivered {
+  padding: 12px 16px;
+}
+
+.proof-section .support-delivered strong {
+  font-size: 1.48rem;
+}
+
+.proof-section .parent-proof {
+  padding: 20px 24px;
+  border-radius: 18px;
+}
+
+.proof-section .parent-proof p,
+.proof-section .parent-proof--footer p {
+  font-size: clamp(1.05rem, 1.52vw, 1.2rem);
+  line-height: 1.38;
+}
+
+.proof-section .parent-proof footer,
+.proof-section .parent-proof--footer footer {
+  margin-top: 10px;
+  font-size: 0.76rem;
+}
+
+.case-study--ongoing {
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+}
+
+.case-study--ongoing .case-label {
+  padding: 8px 11px;
+  font-size: 0.74rem;
+}
+
+.case-study--ongoing .progress-grid {
+  gap: 10px;
+}
+
+.case-study--ongoing .progress-card {
+  padding: 14px 16px;
+  border-radius: 16px;
+}
+
+.case-study--ongoing .progress-card strong {
+  margin: 5px 0;
+  font-size: 0.98rem;
+  line-height: 1.26;
+}
+
+.case-study--ongoing .progress-card p {
+  font-size: 0.83rem;
+  line-height: 1.42;
+}
+
+.case-study--ongoing .case-details > summary {
+  min-height: 66px;
+  padding: 14px 19px;
+}
+
+.case-study--ongoing .case-details__summary-copy small {
+  font-size: 0.75rem;
+}
+
+.case-study--ongoing .case-details__chevron {
+  width: 36px;
+  height: 36px;
+}
+
+.case-study--ongoing .parent-proof--footer {
+  padding: 19px 23px;
+}
+
+.case-study--origin {
+  grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.16fr);
+  gap: 18px;
+  padding: 27px;
+}
+
+.case-study--origin .origin-arc {
+  gap: 10px;
+}
+
+.case-study--origin .origin-step {
+  padding: 13px 14px 13px 16px;
+}
+
+.case-study--origin .case-intro {
+  font-size: 0.92rem;
+  line-height: 1.44;
+}
+
+.case-study--origin .case-credit {
+  font-size: 0.87rem;
+  line-height: 1.4;
+}
+
+.case-study--origin .origin-step strong {
+  font-size: 0.88rem;
+  line-height: 1.22;
+}
+
+.case-study--origin .origin-step p {
+  font-size: 0.75rem;
+  line-height: 1.36;
+}
+
+.case-study--origin .origin-details > summary {
+  min-height: 64px;
+  padding: 13px 18px;
+}
+
+.case-study--origin .origin-proof {
+  padding: 18px 21px;
+}
+
+.case-study--origin .origin-proof p {
+  font-size: clamp(1.02rem, 1.4vw, 1.1rem);
+  line-height: 1.36;
+}
+
+.proof-section .carousel-dots {
+  margin-top: 12px;
+}
+
+@media (max-width: 940px) {
+  .case-study--ongoing,
+  .case-study--origin {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-section .case-study--ib,
+  .case-study--origin {
+    padding: 26px;
+  }
+}
+
+@media (max-width: 620px) {
+  .proof-section {
+    padding: 54px 0 66px;
+  }
+
+  .proof-section .case-study--ib,
+  .case-study--origin {
+    gap: 18px;
+    padding: 22px;
+  }
+
+  .case-study--ongoing .progress-card {
+    padding: 14px 15px;
+  }
+
+  .proof-section .parent-proof,
+  .case-study--ongoing .parent-proof--footer,
+  .case-study--origin .origin-proof {
+    padding: 19px 20px;
+  }
+}
