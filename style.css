@@ -5118,6 +5118,32 @@ h1 {
 /* Preserve the original, continuous scroll feel: a slim band of the hero
    remains above Approach while Who we help still peeks in below. */
 @media (min-width: 941px) {
+  /* Let the opening composition use more of the available desktop frame
+     without changing its section boundary or allowing Approach to bleed in. */
+  .hero-grid {
+    grid-template-columns: 1.12fr 0.88fr;
+    gap: 40px;
+  }
+
+  h1 {
+    max-width: 760px;
+    font-size: clamp(3.05rem, 5.2vw, 4.5rem);
+  }
+
+  .hero .lead {
+    max-width: 640px;
+    font-size: clamp(1.08rem, 1.55vw, 1.2rem);
+  }
+
+  .hero-placeholder {
+    height: clamp(390px, 31vw, 430px);
+  }
+
+  .trust-card {
+    min-height: 74px;
+    padding: 12px 14px;
+  }
+
   #approach {
     scroll-margin-top: 22px;
   }
