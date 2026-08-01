@@ -5108,3 +5108,15 @@ h1 {
     padding-block: 10px;
   }
 }
+
+
+/* Give the Proof landing a little more room below the sticky header. */
+#reviews {
+  scroll-margin-top: 20px;
+}
+
+@media (max-width: 620px) {
+  #reviews {
+    scroll-margin-top: 16px;
+  }
+}
