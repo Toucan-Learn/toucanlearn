@@ -6,7 +6,7 @@
   <title>Toucan Learn | Bespoke tutoring built around your child</title>
   <meta name="description" content="Specialist online tutoring for SEN learners and children who need extra support across KS2, KS3 and GCSE. Child-led, bespoke and confidence-building." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css?v=20260801-approach-balanced-peeks-2" />
+  <link rel="stylesheet" href="style.css?v=20260802-proof-reveals-orange-quotes" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -502,14 +502,14 @@
                   <p>They were not rewards held back until work was finished. They were genuine routes into trust, conversation, thinking and learning.</p>
                 </div>
                 <div class="origin-step">
-                  <span>03 · Hidden competence</span>
-                  <strong>The penhold breakthrough</strong>
-                  <p>The grip he used to teach Josh table tennis already contained the motor control needed to hold a pencil. The skill existed; it only needed transferring.</p>
-                </div>
-                <div class="origin-step">
-                  <span>04 · A different route</span>
+                  <span>03 · A different route</span>
                   <strong>The English task became a song</strong>
                   <p>He created the ideas through music and conversation while Josh acted as scribe. The learning objective stayed the same; only the route changed.</p>
+                </div>
+                <div class="origin-step">
+                  <span>04 · Hidden competence</span>
+                  <strong>The penhold breakthrough</strong>
+                  <p>The grip he used to teach Josh table tennis already contained the motor control needed to hold a pencil. The skill existed; it only needed transferring.</p>
                 </div>
               </div>
 
@@ -602,6 +602,18 @@
       let activeIndex = 0;
       let touchStartX = 0;
 
+      const syncStageHeight = (immediate = false) => {
+        const activeSlide = slides[activeIndex];
+        if (!activeSlide) return;
+
+        if (immediate) stage.classList.add('is-measuring');
+        stage.style.height = `${Math.ceil(activeSlide.scrollHeight)}px`;
+
+        if (immediate) {
+          requestAnimationFrame(() => stage.classList.remove('is-measuring'));
+        }
+      };
+
       const showSlide = (index) => {
         activeIndex = (index + slides.length) % slides.length;
 
@@ -626,6 +638,7 @@
         });
 
         current.textContent = activeIndex + 1;
+        requestAnimationFrame(() => syncStageHeight());
       };
 
       carousel.querySelector('[data-prev]').addEventListener('click', () => showSlide(activeIndex - 1));
@@ -647,7 +660,22 @@
         showSlide(activeIndex + (distance < 0 ? 1 : -1));
       }, { passive: true });
 
+      carousel.querySelectorAll('.case-details').forEach((details) => {
+        details.addEventListener('toggle', () => {
+          requestAnimationFrame(() => syncStageHeight());
+        });
+      });
+
+      if ('ResizeObserver' in window) {
+        const slideObserver = new ResizeObserver(() => syncStageHeight());
+        slides.forEach((slide) => slideObserver.observe(slide));
+      }
+
+      window.addEventListener('resize', () => syncStageHeight(true), { passive: true });
+      window.addEventListener('load', () => syncStageHeight(true), { once: true });
+
       showSlide(0);
+      syncStageHeight(true);
     });
 
     const mascot = document.querySelector('[data-mascot]');
