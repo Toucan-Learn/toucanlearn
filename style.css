@@ -5074,14 +5074,8 @@ h1 {
   }
 }
 
-/* Proof card size alignment: 2026-08-01 */
+/* Proof card internal balance: 2026-08-01 */
 @media (min-width: 1100px) {
-  /* Joe and the origin story establish the intended desktop card proportions. */
-  .proof-section .case-slide {
-    height: 594px;
-    min-height: 594px;
-  }
-
   /* Let the shorter completed case breathe, with its quote anchoring the card. */
   .proof-section .case-slide[data-proof-order="1"] {
     grid-template-rows: 1fr auto;
@@ -5385,6 +5379,11 @@ h1 {
 
 @media (min-width: 1100px) {
   .proof-section .case-slide {
+    height: 660px;
+    min-height: 660px;
+  }
+
+  .proof-section .case-slide:has(> .case-details[open]) {
     height: auto;
   }
 }
@@ -5430,49 +5429,59 @@ h1 {
   }
 }
 
-/* Hero, Who and Proof proportion pass: 2026-08-02 */
+/* Section geometry reset: one shared frame and one source of truth. */
 @media (min-width: 941px) {
-  /* Give the upper Hero composition more presence while bringing its trust
-     strip materially closer to the beginning of Approach. */
+  .hero-grid,
+  .trust-strip,
+  #approach > .container,
+  .who-shell,
+  .how-shell,
+  #reviews {
+    width: min(calc(100% - 32px), var(--max));
+  }
+
   .hero {
     padding-bottom: 12px;
   }
 
   .hero-grid {
-    width: min(calc(100% - 32px), 1220px);
     grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
-    gap: 42px;
+    gap: 40px;
   }
 
   h1 {
-    max-width: 790px;
-    font-size: clamp(3.12rem, 5.35vw, 4.7rem);
+    max-width: 760px;
+    font-size: clamp(3.05rem, 5.2vw, 4.5rem);
   }
 
   .hero .lead {
-    max-width: 660px;
-    font-size: clamp(1.1rem, 1.62vw, 1.23rem);
+    max-width: 640px;
+    font-size: clamp(1.08rem, 1.55vw, 1.2rem);
   }
 
   .hero-placeholder {
-    height: clamp(405px, 32vw, 452px);
+    height: clamp(390px, 31vw, 430px);
   }
 
   #approach {
     padding-top: 54px;
   }
 
-  /* The dark panel is six percent wider and approximately five-to-seven
-     percent taller across common laptop and desktop viewports. */
   .who-shell {
-    width: min(calc(100% - 32px), 1230px);
     min-height: clamp(660px, 82svh, 750px);
     padding: 58px;
   }
 
-  /* Centre the panel in the usable viewport below the sticky navigation. */
+  .who-intro {
+    transform: translateY(-56px);
+  }
+
   #who {
     scroll-margin-top: clamp(-14px, min(calc(50svh - 398px), calc(9svh - 68px)), 14px);
+  }
+
+  .how-shell {
+    grid-template-columns: minmax(0, 0.94fr) minmax(0, 1.06fr);
   }
 }
 
@@ -5508,4 +5517,10 @@ h1 {
 
 .proof-section .parent-proof footer {
   color: rgba(255, 255, 255, 0.74);
+}
+
+@media (max-width: 940px) {
+  .who-intro {
+    transform: none;
+  }
 }
