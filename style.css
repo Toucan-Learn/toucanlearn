@@ -5946,3 +5946,11 @@ h1 {
     transition: none;
   }
 }
+
+/* Proof should land with a little air above its heading, rather than touching
+   the sticky navigation when reached from the section link. */
+@media (min-width: 941px) {
+  #reviews {
+    scroll-margin-top: 32px;
+  }
+}
