@@ -5362,10 +5362,10 @@ h1 {
 /* Balanced Approach overlap and resilient Proof reveals: 2026-08-02 */
 @media (min-width: 941px) {
   #approach {
-    /* A shorter section creates a stronger glimpse of both neighbours; the
-       matching anchor shift divides that extra room evenly above and below. */
+    /* Keep the anchor composition balanced independently of the Hero's first-
+       load boundary: trust-card edge above, Who we help edge below. */
     padding-block: 72px;
-    scroll-margin-top: clamp(40px, calc(57svh - 398px), 244px);
+    scroll-margin-top: clamp(104px, calc(57svh - 334px), 308px);
   }
 }
 
