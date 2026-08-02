@@ -1215,7 +1215,7 @@
     }
 
     .cta {
-      padding: 42px 0 96px;
+      padding: 30px 0 60px;
     }
 
     .cta-box {
@@ -1228,7 +1228,7 @@
         var(--paper);
       border: 1px solid var(--line);
       border-radius: var(--radius-xl);
-      padding: 36px;
+      padding: 30px;
       box-shadow: var(--shadow);
     }
 
@@ -5611,7 +5611,7 @@ h1 {
   }
 
   #approach {
-    padding-top: 42px;
+    padding-top: 30px;
   }
 
   .who-shell {
@@ -5709,7 +5709,7 @@ h1 {
   }
 
   .hero {
-    min-height: calc(100svh - 101px);
+    min-height: calc(100svh - 165px);
     display: flex;
     flex-direction: column;
     align-content: normal;
@@ -5949,6 +5949,17 @@ h1 {
   box-shadow: 0 18px 42px rgba(11, 63, 81, 0.23);
 }
 
+/* One decorative closing mark, anchored identically in every Proof quote.
+   Keeping it on the lower edge avoids the cropped/opening-mark effect. */
+.proof-section .parent-proof::after {
+  content: "\201D";
+  top: auto;
+  right: 18px;
+  bottom: -64px;
+  font-size: 9rem;
+  line-height: 1;
+}
+
 @media (max-width: 940px) {
   .trust-strip {
     margin-top: 14px;
@@ -5991,6 +6002,6 @@ h1 {
    the sticky navigation when reached from the section link. */
 @media (min-width: 941px) {
   #reviews {
-    scroll-margin-top: 32px;
+    scroll-margin-top: 16px;
   }
 }
