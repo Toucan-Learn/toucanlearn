@@ -6006,6 +6006,6 @@ h1 {
    desktop viewports trade that space for a guaranteed view of the dots. */
 @media (min-width: 941px) {
   #reviews {
-    scroll-margin-top: min(-12px, calc(100svh - 847px));
+    scroll-margin-top: min(-6px, calc(100svh - 847px));
   }
 }
