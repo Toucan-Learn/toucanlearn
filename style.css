@@ -5709,7 +5709,10 @@ h1 {
   }
 
   .hero {
-    min-height: calc(100svh - 165px);
+    /* The sticky header is ~101px tall on desktop. Keeping the Hero equal to
+       the remaining viewport makes the landing page close cleanly at the
+       fold, without exposing Approach on first load. */
+    min-height: calc(100svh - 101px);
     display: flex;
     flex-direction: column;
     align-content: normal;
@@ -5998,10 +6001,10 @@ h1 {
   }
 }
 
-/* Proof should land with a little air above its heading, rather than touching
-   the sticky navigation when reached from the section link. */
+/* Proof lands below the sticky navigation with a deliberate, visible amount
+   of breathing room. This is the sole final desktop Proof anchor rule. */
 @media (min-width: 941px) {
   #reviews {
-    scroll-margin-top: 16px;
+    scroll-margin-top: 24px;
   }
 }
