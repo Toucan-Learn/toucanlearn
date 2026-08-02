@@ -6,7 +6,7 @@
   <title>Toucan Learn | Bespoke tutoring built around your child</title>
   <meta name="description" content="Specialist online tutoring for SEN learners and children who need extra support across KS2, KS3 and GCSE. Child-led, bespoke and confidence-building." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css?v=20260802-proof-indicators-in-view-3" />
+  <link rel="stylesheet" href="style.css?v=20260802-proof-indicators-in-view-4" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -607,7 +607,7 @@
         if (!activeSlide) return;
 
         if (immediate) stage.classList.add('is-measuring');
-        stage.style.height = `${Math.ceil(activeSlide.scrollHeight)}px`;
+        stage.style.height = `${Math.ceil(activeSlide.getBoundingClientRect().height)}px`;
 
         if (immediate) {
           requestAnimationFrame(() => stage.classList.remove('is-measuring'));
