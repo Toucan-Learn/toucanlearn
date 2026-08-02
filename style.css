@@ -5429,3 +5429,83 @@ h1 {
     transition: none;
   }
 }
+
+/* Hero, Who and Proof proportion pass: 2026-08-02 */
+@media (min-width: 941px) {
+  /* Give the upper Hero composition more presence while bringing its trust
+     strip materially closer to the beginning of Approach. */
+  .hero {
+    padding-bottom: 12px;
+  }
+
+  .hero-grid {
+    width: min(calc(100% - 32px), 1220px);
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+    gap: 42px;
+  }
+
+  h1 {
+    max-width: 790px;
+    font-size: clamp(3.12rem, 5.35vw, 4.7rem);
+  }
+
+  .hero .lead {
+    max-width: 660px;
+    font-size: clamp(1.1rem, 1.62vw, 1.23rem);
+  }
+
+  .hero-placeholder {
+    height: clamp(405px, 32vw, 452px);
+  }
+
+  #approach {
+    padding-top: 54px;
+  }
+
+  /* The dark panel is six percent wider and approximately five-to-seven
+     percent taller across common laptop and desktop viewports. */
+  .who-shell {
+    width: min(calc(100% - 32px), 1230px);
+    min-height: clamp(660px, 82svh, 750px);
+    padding: 58px;
+  }
+
+  /* Centre the panel in the usable viewport below the sticky navigation. */
+  #who {
+    scroll-margin-top: clamp(-14px, min(calc(50svh - 398px), calc(9svh - 68px)), 14px);
+  }
+}
+
+/* Remove the decorative quarter-circle and strengthen the existing soft
+   orange-to-teal colour movement without changing the section's base colour. */
+.who-shell::before {
+  display: none;
+}
+
+.who-shell {
+  background:
+    radial-gradient(circle at 8% 12%, rgba(228, 122, 46, 0.28), transparent 17rem),
+    radial-gradient(circle at 96% 92%, rgba(31, 122, 117, 0.54), transparent 23rem),
+    linear-gradient(145deg, #0b3f51 0%, #0b495b 56%, #0a535f 100%);
+}
+
+/* Return quotes to the brand blue while retaining the new gradient and quote
+   motif introduced in the previous Proof pass. */
+.proof-section .parent-proof {
+  color: white;
+  background: linear-gradient(135deg, var(--blue) 0%, var(--blue-2) 100%);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 18px 42px rgba(11, 63, 81, 0.2);
+}
+
+.proof-section .parent-proof::after {
+  color: rgba(255, 255, 255, 0.13);
+}
+
+.proof-section .parent-proof p {
+  color: white;
+}
+
+.proof-section .parent-proof footer {
+  color: rgba(255, 255, 255, 0.74);
+}
