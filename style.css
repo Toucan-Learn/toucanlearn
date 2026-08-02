@@ -5760,6 +5760,46 @@ h1 {
   }
 }
 
+/* Give the process its own generous resting footprint.  The detail reveal is
+   deliberately fixed-height; the section must therefore feel complete before
+   a parent opens a single step. */
+@media (min-width: 941px) {
+  .how-section {
+    min-height: calc(100svh + 28px);
+    padding: 108px 0;
+  }
+
+  .how-overview {
+    padding: 38px;
+  }
+
+  .how-overview h2 {
+    font-size: clamp(2.1rem, 4vw, 3.45rem);
+  }
+
+  .how-overview > p {
+    font-size: 1.04rem;
+    line-height: 1.5;
+  }
+
+  .how-steps {
+    gap: 14px;
+  }
+
+  .how-steps li {
+    min-height: 128px;
+    padding: 22px;
+  }
+
+  .how-step__details {
+    height: 72px;
+  }
+
+  .how-cta {
+    padding: 24px 28px;
+  }
+}
+
 @media (min-width: 941px) and (max-height: 820px) {
   .hero {
     padding-top: 18px;
