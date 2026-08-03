@@ -5362,10 +5362,9 @@ h1 {
 /* Balanced Approach overlap and resilient Proof reveals: 2026-08-02 */
 @media (min-width: 941px) {
   #approach {
-    /* Keep the anchor composition balanced independently of the Hero's first-
-       load boundary: trust-card edge above, Who we help edge below. */
-    padding-block: 72px;
-    scroll-margin-top: clamp(104px, calc(57svh - 334px), 308px);
+    /* Centre the complete Approach composition in the viewport. The sticky
+       header remains accounted for by html's scroll padding. */
+    scroll-margin-top: clamp(0px, calc(50svh - 344px), 260px);
   }
 }
 
@@ -5611,7 +5610,9 @@ h1 {
   }
 
   #approach {
-    padding-top: 30px;
+    /* The final desktop spacing source: six pixels less at each edge lets the
+       neighbouring Hero and Who we help sections frame Approach more neatly. */
+    padding: 24px 0 66px;
   }
 
   .who-shell {
@@ -5759,7 +5760,10 @@ h1 {
   }
 
   .trust-strip {
-    margin-top: clamp(22px, 2.8svh, 28px);
+    /* Close the full-height landing frame with the trust strip while retaining
+       a modest lower gutter rather than a large, visually empty tail. */
+    margin-top: auto;
+    margin-bottom: clamp(48px, 6.2svh, 60px);
   }
 }
 
