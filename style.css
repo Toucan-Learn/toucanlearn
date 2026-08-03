@@ -5362,9 +5362,9 @@ h1 {
 /* Balanced Approach overlap and resilient Proof reveals: 2026-08-02 */
 @media (min-width: 941px) {
   #approach {
-    /* Centre the complete Approach composition in the viewport. The sticky
-       header remains accounted for by html's scroll padding. */
-    scroll-margin-top: clamp(0px, calc(50svh - 344px), 260px);
+    /* Preserve the centred Approach landing after tightening its lower edge.
+       The sticky header remains accounted for by html's scroll padding. */
+    scroll-margin-top: clamp(0px, calc(50svh - 334px), 260px);
   }
 }
 
@@ -5610,9 +5610,15 @@ h1 {
   }
 
   #approach {
-    /* The final desktop spacing source: six pixels less at each edge lets the
-       neighbouring Hero and Who we help sections frame Approach more neatly. */
-    padding: 24px 0 66px;
+    /* Keep the Hero-side spacing intact and remove the remaining excess below
+       the cards so both neighbouring sections frame Approach evenly. */
+    padding: 24px 0 46px;
+  }
+
+  .who-section {
+    /* Bring the dark panel and first audience cell into the Approach anchor's
+       lower edge without changing the Who we help anchor itself. */
+    padding-top: 48px;
   }
 
   .who-shell {
